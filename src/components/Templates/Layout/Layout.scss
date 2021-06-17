@@ -1,0 +1,193 @@
+@use "poly-fluid-sizing" as pfz;
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  src: url("../../../../static/fonts/josefin-sans-v17-latin-regular.eot");
+  src: local(""),
+    url("../../../../static/fonts/josefin-sans-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../../../static/fonts/josefin-sans-v17-latin-regular.woff2")
+      format("woff2"),
+    url("../../../../static/fonts/josefin-sans-v17-latin-regular.woff")
+      format("woff"),
+    url("../../../../static/fonts/josefin-sans-v17-latin-regular.ttf")
+      format("truetype"),
+    url("../../../../static/fonts/josefin-sans-v17-latin-regular.svg#JosefinSans")
+      format("svg");
+  font-display: swap;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.w-0 {
+  width: 0;
+}
+.h-0 {
+  height: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#primary {
+  max-width: 1920px;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 1px solid;
+}
+
+.active-link {
+  color: #ffa500 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+form small {
+  color: red;
+}
+/*! purgecss start ignore */
+.gatsby-highlight pre code[class*="language-"] {
+  font-family: "Consolas", "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  span.token {
+    font-family: "Consolas", "Courier New", Courier, monospace;
+    font-size: 0.8rem;
+  }
+}
+
+th[align="left"] {
+  text-align: left;
+}
+
+th[align="right"] {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  padding: 3em;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="698" height="542" viewBox="0 0 184.7 143.4"><path d="M88 13.3l5.3 6.6h-.8q-19.8 0-36.2 10-16.4 10-21 25 10-5 19.6-5 22.2 0 35.5 21 7-26.7 26.5-42 19.6-15.6 46-15.6h1.3l5.3 6.6q-19.6 0-36.8 10.6-17.5 10.3-21 24.6 10.8-5 19.6-5 16.4 0 28.3 12 11.6 12 11.6 28.3 0 16.7-11.6 28.3-11.6 11.6-28.6 11.6-26.2 0-37.8-27-4.2 12-14.6 19.3-10.6 7.7-23.5 7.7-18 0-30-13.5-12.2-13.2-12.2-33.3 0-5.6 1.6-13Q16 63 21.2 52.7 26 42.4 33.6 34.2q7.7-8.2 22-14.3 14.3-6.4 32.5-6.6z" fill="%23dc143c"/></svg>')
+      no-repeat top left,
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="698" height="542" viewBox="0 0 184.7 143.4"><path d="M96.6 130.2l-5.3-6.6h.8q19.8 0 36.2-10 16.4-10 21-25-10 5-19.6 5-22.2 0-35.5-21-7 26.7-26.5 42-19.6 15.6-46 15.6h-1.3l-5.3-6.6q19.6 0 36.8-10.6 17.5-10.3 21-24.6-10.8 5-19.6 5-16.4 0-28.3-12-11.6-12-11.6-28.3Q13.2 36.5 25 25q11.6-11.6 28.6-11.6 26.2 0 37.8 27 4.2-12 14.6-19.3 10.6-7.7 23.5-7.7 18 0 30 13.5Q171.4 40 171.4 60q0 5.6-1.6 13-1.3 7.4-6.3 17.7-4.8 10.3-12.4 18.5-7.7 8.2-22 14.3-14.3 6.3-32.5 6.6z" fill="%237fff00"/></svg>')
+      no-repeat bottom right,
+    rgb(200, 255, 145);
+  background-size: 4em;
+  p {
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.3em;
+  }
+  cite {
+    display: block;
+    text-align: end;
+    color: gray;
+  }
+}
+
+* {
+  font-family: "Josefin Sans";
+  font-display: swap;
+  @include pfz.poly-fluid-sizing(
+    "font-size",
+    (
+      320px: 10.75px,
+      768px: 14.5px,
+      1024px: 17.5px,
+      1440px: 21.5px,
+      1920px: 26px,
+    )
+  );
+}
+small {
+  * {
+    font-size: inherit !important;
+  }
+}
+a,
+p {
+  font-size: 1.1rem;
+}
+h6,
+.h6 {
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+h5,
+.h5 {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+h4,
+.h4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+h3,
+.h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+h2,
+.h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+h1,
+.h1 {
+  font-weight: 900;
+  font-size: 2.25rem;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+/*! purgecss end ignore */

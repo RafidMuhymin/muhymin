@@ -1,0 +1,19 @@
+.front-bio {
+  .profile-picture {
+    min-height: 25em;
+    &::after {
+      opacity: 0.9 !important;
+      transition: opacity 0.5s !important;
+    }
+    &:hover::after {
+      opacity: 1 !important;
+    }
+    .overlay {
+      background-color: orange;
+    }
+  }
+  .divider {
+    background-color: lightgray;
+    height: 1%;
+  }
+}

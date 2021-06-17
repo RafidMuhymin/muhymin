@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Peace Sans';
+    src: url('PeaceSans.eot');
+    src: local('Peace Sans'), local('PeaceSans'),
+        url('PeaceSans.eot?#iefix') format('embedded-opentype'),
+        url('PeaceSans.woff2') format('woff2'),
+        url('PeaceSans.woff') format('woff'),
+        url('PeaceSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
