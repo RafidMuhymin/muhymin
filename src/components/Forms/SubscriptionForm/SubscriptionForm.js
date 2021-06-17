@@ -10,13 +10,20 @@ export default function SubscriptionForm() {
   } = useForm();
 
   const onSubmit = (data) => {
+    const splittedName = data.name.split(" ");
+    const lastname = splittedName.splice(splittedName.length - 1)[0];
+    const firstname = splittedName.join(" ");
+
+    delete data.name;
+    data.firstname = firstname;
+    data.lastname = lastname;
+
     fetch("/api/subscribe", {
       method: "POST",
       body: JSON.stringify(data),
     })
       .then((res) => {
         console.log("Subscribed sSuccessfully", res);
-        window.location.reload();
       })
       .catch((err) => {
         console.log(err);

@@ -45,13 +45,6 @@ const SEO = ({
         }}
         title={title}
         titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-        script={[
-          {
-            type: "text/javascript",
-            src: "https://platform-api.sharethis.com/js/sharethis.js#property=60c230fd44d0be0011140aab&product=image-share-buttons",
-            async: "async",
-          },
-        ]}
         meta={[
           {
             name: `description`,

@@ -6,7 +6,7 @@ import Layout from "../Layout/Layout";
 import Sidebar from "./Sidebar/Sidebar";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import "./PostTemplate.scss";
-import ShareButtons from "./ShareButtons";
+import ShareButtons from "./ShareButtons/ShareButtons";
 import Fallback from "../../Shared/Fallback/Fallback";
 
 const Comment = loadable(() => import("./Comment/Comment"));
@@ -101,8 +101,9 @@ export default function PostTemplate({ data, pageContext }) {
               url={sm.siteUrl + "/" + slug}
               title={title}
               media={ogImage}
-              twitterHandle={authorTwitter}
-              description={desc}
+              user_id={authorTwitter.slice(1)}
+              app_id={process.env.GATSBY_FACEBOOK_APP_ID}
+              text={desc}
             ></ShareButtons>
             <div className="prevNext d-flex flex-wrap my-4">
               {previous && (

@@ -60,6 +60,10 @@ export default function ContactForm() {
         value="Contact"
         id="contact-btn"
       />
+
+      <p className="my-2 text-center-fst-italic fs-6">
+        You'll be redirected to Google Mail when you submit.
+      </p>
     </form>
   );
 }
