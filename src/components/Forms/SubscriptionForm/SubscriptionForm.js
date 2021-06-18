@@ -2,41 +2,67 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./SubscriptionForm.scss";
 
-export default function SubscriptionForm() {
+export default function SubscriptionForm({ isSidebar }) {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const classname = isSidebar ? "mt-4 mb-2" : "";
 
   const onSubmit = (data) => {
     const splittedName = data.name.split(" ");
     const lastname = splittedName.splice(splittedName.length - 1)[0];
     const firstname = splittedName.join(" ");
-
-    delete data.name;
-    data.firstname = firstname;
-    data.lastname = lastname;
-
-    fetch("/api/subscribe", {
+    fetch("https://api.omnisend.com/v3/contacts", {
       method: "POST",
-      body: JSON.stringify(data),
+      headers: {
+        "x-api-key": process.env.GATSBY_X_API_KEY,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        createdAt: new Date().toISOString(),
+        firstName: firstname,
+        lastName: lastname,
+        identifiers: [
+          {
+            type: "email",
+            id: data.email,
+            sendWelcomeMessage: true,
+            channels: {
+              email: {
+                status: "subscribed",
+                statusDate: new Date().toISOString(),
+              },
+            },
+          },
+        ],
+      }),
     })
-      .then((res) => {
-        console.log("Subscribed sSuccessfully", res);
-      })
+      .then(() => window.location.reload())
       .catch((err) => {
         console.log(err);
       });
   };
   return (
-    <form id="subscription-form" onSubmit={handleSubmit(onSubmit)}>
-      <div className="h1 text-center">Subscibe to Our Newsletter</div>
-      <br />
-      <div className="h2 text-center">
-        Get the Latest Updates Delivered right to Your Inbox
-      </div>
-      <br />
+    <form
+      id="subscription-form"
+      className={classname}
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      {isSidebar ? (
+        <>
+          <h3 className="text-center">Subscibe to Our Newsletter</h3>
+          <hr className="my-3" />
+        </>
+      ) : (
+        <>
+          <h1 className="text-center">Subscibe to Our Newsletter</h1>
+          <h2 className="text-center">
+            Get the Latest Updates Delivered right to Your Inbox
+          </h2>
+        </>
+      )}
 
       <input
         type="email"
@@ -54,7 +80,7 @@ export default function SubscriptionForm() {
       {errors.name && <small>This field is required</small>}
       <input
         type="submit"
-        id="subscibe-btn"
+        id="subscribe-btn"
         value="Subscirbe"
         className="form-control my-2"
       />

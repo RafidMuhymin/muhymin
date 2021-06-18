@@ -75,7 +75,9 @@
     "react-hook-form": "^7.6.4",
     "react-share": "^4.4.0",
     "sass": "^1.33.0",
-    "sharethis-reactjs": "^1.6.0"
+    "sharethis-reactjs": "^1.6.0",
+    "simple-icons": "^5.2.0",
+    "super-tiny-icons": "^0.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

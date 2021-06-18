@@ -1,6 +1,6 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import SidebarSubscriptionForm from "../../../Forms/SidebarSubscriptionForm/SidebarSubscriptionForm";
+import SubscriptionForm from "../../../Forms/SubscriptionForm/SubscriptionForm";
 import Search from "../../../Shared/Search/Search";
 import AuthorBio from "../AuthorBio/AuthorBio";
 import "./Sidebar.scss";
@@ -49,7 +49,7 @@ export default function Sidebar({
         authorProfilePicture={authorProfilePicture}
       />
       <hr />
-      <SidebarSubscriptionForm />
+      <SubscriptionForm isSidebar={true} />
     </aside>
   );
 }

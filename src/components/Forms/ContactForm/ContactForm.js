@@ -10,14 +10,17 @@ export default function ContactForm() {
   } = useForm();
 
   const onSubmit = (data) => {
+    const { name, info } = data;
+    window.open(
+      `https://mail.google.com/mail/?view=cm&to=rafidmuhymin@gmail.com&su=I am ${name} contacting you via the contact form on your website&body=${info}`,
+      "_blank"
+    );
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(data),
     })
-      .then((res) => {
-        console.log("Contacted Successfully", res);
-        window.location.reload();
-      })
+      .then((res) => console.log(res))
+      .then(() => window.location.reload())
       .catch((err) => {
         console.log(err);
       });
@@ -27,16 +30,16 @@ export default function ContactForm() {
       <h2 className="text-center">Send Us a Message</h2>
       <input
         className="form-control my-3"
-        type="text"
+        type="email"
         placeholder="Enter Your Email Address"
-        {...register("name", { required: true })}
+        {...register("email", { required: true })}
       />
       {errors.name && <small>This field is required</small>}
       <input
         className="form-control my-3"
-        type="email"
+        type="text"
         placeholder="Enter Your Name"
-        {...register("email", { required: true })}
+        {...register("name", { required: true })}
       />
       {errors.email && <small>This field is required</small>}
       <input
@@ -47,7 +50,6 @@ export default function ContactForm() {
       />
       <textarea
         className="form-control my-3"
-        type="text"
         cols="30"
         rows="5"
         placeholder="Type What You Want to Talk About"
@@ -60,10 +62,9 @@ export default function ContactForm() {
         value="Contact"
         id="contact-btn"
       />
-
-      <p className="my-2 text-center-fst-italic fs-6">
-        You'll be redirected to Google Mail when you submit.
-      </p>
+      <small className="d-block my-2 text-center">
+        <em>* You'll be redirected to Google Mail when you submit.</em>
+      </small>
     </form>
   );
 }
