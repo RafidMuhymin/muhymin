@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
 const MongoClient = require("mongodb").MongoClient;
-const ObjectId = require("mongodb").ObjectId;
 
 const uri = `mongodb+srv://${process.env.DB_ADMIN}:${process.env.DB_PASS}@cluster0.avzmu.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 

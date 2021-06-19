@@ -108,7 +108,7 @@ const SEO = ({
           },
           {
             name: `twitter:creator`,
-            content: twitterId || site.siteMetadata.social.twitter,
+            content: `@${twitterId || site.siteMetadata.social.twitter}`,
           },
           {
             name: `twitter:title`,

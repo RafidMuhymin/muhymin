@@ -12,7 +12,7 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     const { name, info } = data;
     window.open(
-      `https://mail.google.com/mail/?view=cm&to=rafidmuhymin@gmail.com&su=I am ${name} contacting you via the contact form on your website&body=${info}`,
+      `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
       "_blank"
     );
     fetch("/api/contact", {
@@ -63,7 +63,7 @@ export default function ContactForm() {
         id="contact-btn"
       />
       <small className="d-block my-2 text-center">
-        <em>* You'll be redirected to Google Mail when you submit.</em>
+        <em>* You'll be redirected to your Mail Client when you submit.</em>
       </small>
     </form>
   );

@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import "./PostTemplate.scss";
 import Fallback from "../../Shared/Fallback/Fallback";
+import { LazyLoad } from "../../Shared/LazyLoad/LazyLoad";
 
 const Comment = loadable(() => import("./Comment/Comment"));
 const ShareButtons = loadable(() => import("./ShareButtons/ShareButtons"));
@@ -54,11 +55,11 @@ export default function PostTemplate({ data, pageContext }) {
       meta={[
         {
           property: `article:author`,
-          content: authorFb,
+          content: `https://facebook.com/${authorFb}`,
         },
         {
           property: `article:publisher`,
-          content: `https://web.facebook.com/rafidmuhyminwafi`,
+          content: `https://facebook.com/${authorFb}`,
         },
         {
           property: `article:published_time`,
@@ -87,7 +88,7 @@ export default function PostTemplate({ data, pageContext }) {
       ]}
     >
       <div>
-        <div id="featured-image">
+        <div id="featured-image" className="d-flex justify-content-center">
           <GatsbyImage image={fImgData} alt={title} />
         </div>
         <section id="blog-body" className="d-flex flex-wrap">
@@ -97,15 +98,17 @@ export default function PostTemplate({ data, pageContext }) {
               By {author} • Last Updated On {date}
             </p>
             <MDXRenderer>{markdown}</MDXRenderer>
-            <ShareButtons
-              fallback={<Fallback />}
-              url={sm.siteUrl + "/" + slug}
-              title={title}
-              media={ogImage}
-              user_id={authorTwitter.slice(1)}
-              text={desc}
-            />
-            <div className="prevNext d-flex flex-wrap my-4">
+            <LazyLoad>
+              <ShareButtons
+                fallback={<Fallback />}
+                url={sm.siteUrl + "/" + slug}
+                title={title}
+                media={ogImage}
+                user_id={authorTwitter}
+                text={desc}
+              />
+            </LazyLoad>
+            <div className="prevNext d-flex flex-wrap mb-4">
               {previous && (
                 <div className="prev me-auto">
                   <span className="d-block p-2 text-secondary">⬅ Previous</span>
@@ -137,7 +140,9 @@ export default function PostTemplate({ data, pageContext }) {
             authorTwitter={authorTwitter}
             authorProfilePicture={authorProfilePicture}
           />
-          <Comment fallback={<Fallback />} postTitle={title} />
+          <LazyLoad>
+            <Comment fallback={<Fallback />} postTitle={title} />
+          </LazyLoad>
         </section>
       </div>
     </Layout>

@@ -1,6 +1,8 @@
 import React from "react";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import "./AuthorBio.scss";
+import FollowButtons from "./FollowButtons";
+import { LazyLoad } from "../../../Shared/LazyLoad/LazyLoad";
 
 export default function AuthorBio({
   author,
@@ -33,20 +35,13 @@ export default function AuthorBio({
           <p>{authorBio}</p>
         </div>
         <div className="d-flex justify-content-between">
-          <a
-            href={`${authorFb}`}
-            style={{ backgroundColor: `#3b5998` }}
-            className="p-2 rounded-3"
-          >
-            <span className="text-white">Follow @facebook</span>
-          </a>
-          <a
-            href={`https://twitter.com/${authorTwitter.slice(1)}`}
-            style={{ backgroundColor: `#00acee` }}
-            className="p-2 rounded-3"
-          >
-            <span className="text-white">Follow @twitter</span>
-          </a>
+          <LazyLoad>
+            <FollowButtons
+              author={author}
+              facebook={authorFb}
+              twitter={authorTwitter}
+            />
+          </LazyLoad>
         </div>
       </div>
     </div>

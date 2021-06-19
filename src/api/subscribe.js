@@ -1,50 +1,28 @@
 /* eslint-disable import/no-anonymous-default-export */
-var http = require("https");
+const MongoClient = require("mongodb").MongoClient;
 
-var options = {
-  method: "POST",
-  hostname: "api.omnisend.com",
-  port: null,
-  path: "/v3/contacts",
-  headers: {
-    "x-api-key": process.env.X_API_KEY,
-    "content-type": "application/json",
-  },
-};
+const uri = `mongodb+srv://${process.env.DB_ADMIN}:${process.env.DB_PASS}@cluster0.avzmu.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 export default function (req, res) {
-  var request = http.requestuest(options, function (response) {
-    var chunks = [];
+  client.connect((err) => {
+    const collection = client
+      .db(`${process.env.DB_NAME}`)
+      .collection(`${process.env.DB_COL_3}`);
 
-    response.on("data", function (chunk) {
-      chunks.push(chunk);
-    });
+    collection
+      .insertOne(JSON.parse(req.body))
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
-    response.on("end", function () {
-      var body = Buffer.concat(chunks);
-      console.log(body.toString());
-      res.send(body.toString());
-    });
+    err ? console.log(err) : console.log("no err");
   });
-
-  request.write(
-    JSON.stringify({
-      createdAt: new Date().toISOString(),
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      identifiers: [
-        {
-          type: "email",
-          id: req.body.email,
-          channels: {
-            email: {
-              status: "subscribed",
-              statusDate: new Date().toISOString(),
-            },
-          },
-        },
-      ],
-    })
-  );
-  request.end();
 }

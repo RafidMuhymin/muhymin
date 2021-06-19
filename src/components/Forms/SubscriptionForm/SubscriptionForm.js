@@ -14,32 +14,44 @@ export default function SubscriptionForm({ isSidebar }) {
     const splittedName = data.name.split(" ");
     const lastname = splittedName.splice(splittedName.length - 1)[0];
     const firstname = splittedName.join(" ");
+
+    const body = JSON.stringify({
+      createdAt: new Date().toISOString(),
+      firstName: firstname,
+      lastName: lastname,
+      identifiers: [
+        {
+          type: "email",
+          id: data.email,
+          sendWelcomeMessage: true,
+          channels: {
+            email: {
+              status: "subscribed",
+              statusDate: new Date().toISOString(),
+            },
+          },
+        },
+      ],
+    });
+
     fetch("https://api.omnisend.com/v3/contacts", {
       method: "POST",
       headers: {
         "x-api-key": process.env.GATSBY_X_API_KEY,
         "content-type": "application/json",
       },
-      body: JSON.stringify({
-        createdAt: new Date().toISOString(),
-        firstName: firstname,
-        lastName: lastname,
-        identifiers: [
-          {
-            type: "email",
-            id: data.email,
-            sendWelcomeMessage: true,
-            channels: {
-              email: {
-                status: "subscribed",
-                statusDate: new Date().toISOString(),
-              },
-            },
-          },
-        ],
-      }),
+      body,
     })
-      .then(() => window.location.reload())
+      .then(() => {
+        fetch("api/subscribe", {
+          method: "POST",
+          body,
+        })
+          .then(() => window.location.reload())
+          .catch((err) => {
+            console.log(err);
+          });
+      })
       .catch((err) => {
         console.log(err);
       });

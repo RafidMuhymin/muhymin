@@ -16,14 +16,6 @@ export default function Comment({ postTitle }) {
     replyForm.focus({ preventScroll: true });
   };
 
-  useEffect(() => {
-    if (isReplyForm === true) {
-      focusOnReply();
-    }
-  }, [isReplyForm]);
-
-  // const commentFetch = () => {};
-
   const commentFetch = async () => {
     const res = await fetch("/api/comment", {
       headers: {
@@ -32,9 +24,7 @@ export default function Comment({ postTitle }) {
     }).catch((err) => console.log(err));
     if (res) {
       const data = await res.json();
-      console.log(data);
       if (data.length > 0) {
-        data.sort((a, b) => b.date - a.date);
         localStorage.setItem(`comments-${postTitle}`, JSON.stringify(data));
         setComments(data);
       }
@@ -50,7 +40,10 @@ export default function Comment({ postTitle }) {
     } else {
       commentFetch();
     }
-  }, [postTitle]);
+    if (isReplyForm === true) {
+      focusOnReply();
+    }
+  }, [isReplyForm]);
 
   return (
     <div id="comment" className="w-100 d-flex flex-column flex-md-row">
