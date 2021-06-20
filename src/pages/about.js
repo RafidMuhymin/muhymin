@@ -14,7 +14,7 @@ export default function About({ data }) {
         <div id="about-head">
           <div className="h6">A few words</div>
           <div className="divider my-3"></div>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
         </div>
       </BgImage>
 

@@ -93,7 +93,7 @@ export default function SubscriptionForm({ isSidebar }) {
       <input
         type="submit"
         id="subscribe-btn"
-        value="Subscirbe"
+        value="Subscribe"
         className="form-control my-2"
       />
     </form>

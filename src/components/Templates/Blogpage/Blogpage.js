@@ -72,7 +72,7 @@ export default function Blog({ data, pageContext }) {
                 <p>{excerpt}</p>
                 <Link
                   to={"/" + slug}
-                  className="read-more p-2 rounded-3 align-self-center"
+                  className="read-more bg-secondary p-2 rounded-3 align-self-center"
                 >
                   Read More …
                 </Link>

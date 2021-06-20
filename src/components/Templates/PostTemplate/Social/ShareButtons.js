@@ -1,6 +1,5 @@
 import React from "react";
 import { InlineReactionButtons, InlineShareButtons } from "sharethis-reactjs";
-import "./ShareButtons.scss";
 
 export default function ShareButtons({ title, user_id, text }) {
   return (

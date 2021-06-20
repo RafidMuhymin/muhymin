@@ -10,7 +10,7 @@ import Fallback from "../../Shared/Fallback/Fallback";
 import { LazyLoad } from "../../Shared/LazyLoad/LazyLoad";
 
 const Comment = loadable(() => import("./Comment/Comment"));
-const ShareButtons = loadable(() => import("./ShareButtons/ShareButtons"));
+const ShareButtons = loadable(() => import("./Social/ShareButtons"));
 
 export default function PostTemplate({ data, pageContext }) {
   const { slug, previous, next } = pageContext;

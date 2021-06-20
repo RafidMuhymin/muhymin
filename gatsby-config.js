@@ -10,6 +10,8 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     FAST_DEV: true,
     FUNCTIONS: true,
+    PARALLEL_SOURCING: true,
+    LMDB_STORE: true,
   },
 
   siteMetadata: {
@@ -99,6 +101,24 @@ module.exports = {
         content: [
           path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-loadable-components-ssr`,
+      options: {
+        useHydrate: true,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        mergeDefaultDirectives: true,
+        directives: {
+          "script-src": "'self' platform-api.sharethis.com",
+          "style-src": "'self' 'unsafe-inline'",
+        },
       },
     },
 
