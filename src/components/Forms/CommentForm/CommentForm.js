@@ -92,9 +92,6 @@ export default function CommentForm({
           style={{ height: "1px", backgroundColor: "lightgray" }}
         ></div>
       </div>
-      <small className="d-block my-2 text-center">
-        <em>* You'll be redirected to your Mail Client when you submit.</em>
-      </small>
     </form>
   );
 }

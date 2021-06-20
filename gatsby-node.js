@@ -1,5 +1,7 @@
 const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlInlineScriptPlugin = require("html-inline-script-webpack-plugin");
 const fs = require("fs");
 const lunr = require("lunr");
 
@@ -116,6 +118,14 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    plugins: [new LoadablePlugin()],
+    plugins: [
+      new LoadablePlugin(),
+      new HtmlWebpackPlugin(),
+      new HtmlInlineScriptPlugin([
+        /runtime~.+[.]js$/,
+        /app~.+[.]js$/,
+        /framework~.+[.]js$/,
+      ]),
+    ],
   });
 };

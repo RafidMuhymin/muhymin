@@ -12,7 +12,7 @@ export default function SearchResult({ title, slug, image, excerpt }) {
           alt={title}
         ></GatsbyImage>
         <div className="col-sm-8 col-12 d-flex flex-column justify-content-between p-3 my-sm-0 my-2">
-          <Link className="" to={"/" + slug}>
+          <Link className="fs-4 fw-bolder" to={"/" + slug}>
             {title}
           </Link>
           <p>{excerpt}</p>

@@ -207,5 +207,4 @@ module.exports = {
 | 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
 
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-<cite>-- Benjamin Franklin</cite>
-
+> <cite>-- Benjamin Franklin</cite>

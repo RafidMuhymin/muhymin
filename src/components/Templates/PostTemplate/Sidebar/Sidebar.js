@@ -32,7 +32,7 @@ export default function Sidebar({
   return (
     <aside id="sidebar" className="mx-5 mx-md-0 my-3 px-5 px-md-3 py-3">
       <Search />
-      <h3 className="my-2">Recent Posts</h3>
+      <div className="h3 my-2">Recent Posts</div>
       {allMdx.nodes.map((node) => {
         return (
           <Link className="d-block my-2" to={"/" + node.frontmatter.slug}>
