@@ -127,11 +127,11 @@ blockquote {
   @include pfz.poly-fluid-sizing(
     "font-size",
     (
-      320px: 10.75px,
-      768px: 14.5px,
-      1024px: 17.5px,
-      1440px: 21.5px,
-      1920px: 26px,
+      320px: 12px,
+      768px: 16px,
+      1024px: 19.5px,
+      1440px: 23.5px,
+      1920px: 29px,
     )
   );
 }

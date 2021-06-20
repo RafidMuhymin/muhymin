@@ -9,7 +9,6 @@ module.exports = {
     PRESERVE_WEBPACK_CACHE: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     FAST_DEV: true,
-    FUNCTIONS: true,
     PARALLEL_SOURCING: true,
     LMDB_STORE: true,
   },
@@ -101,13 +100,6 @@ module.exports = {
         content: [
           path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
         ],
-      },
-    },
-
-    {
-      resolve: `gatsby-plugin-loadable-components-ssr`,
-      options: {
-        useHydrate: true,
       },
     },
 

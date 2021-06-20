@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Layout from "../components/Templates/Layout/Layout";
 import { graphql, useStaticQuery } from "gatsby";
 import Search from "../components/Shared/Search/Search";
@@ -7,15 +7,34 @@ import "../styles/search.scss";
 import SearchResult from "../components/PageComponents/Search/SearchResult";
 
 export default function search({ location }) {
-  const query = location.search.slice(1);
   const [results, setResults] = useState([]);
-  console.log(results);
+  const query = location.search.slice(1);
+
+  const fetchSearchIndex = useCallback(async () => {
+    const res = await fetch(`/search_index.json`).catch((err) =>
+      console.log("Failed fetch search index", err)
+    );
+    const fullIndex = await res.json();
+    return Object.keys(fullIndex).reduce(
+      (prev, key) => ({
+        ...prev,
+        [key]: {
+          index: require("lunr").Index.load(fullIndex[key].index),
+          store: fullIndex[key].store,
+        },
+      }),
+      {}
+    );
+  }, []);
 
   useEffect(() => {
-    const { index, store } = window.__LUNR__.en;
-    const results = index.search(`*${query}*`).map(({ ref }) => store[ref]);
-    setResults(results);
-  }, [query]);
+    (async () => {
+      const searchIndex = await fetchSearchIndex();
+      const { index, store } = searchIndex.en;
+      const results = index.search(`*${query}*`).map(({ ref }) => store[ref]);
+      setResults(results);
+    })();
+  }, [fetchSearchIndex, query]);
 
   const getRecentBlogposts = () => {
     const { allMdx } = useStaticQuery(graphql`

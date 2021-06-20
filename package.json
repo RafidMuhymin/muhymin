@@ -61,6 +61,7 @@
     "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.3.0",
     "gbimage-bridge": "^0.1.4",
+    "lmdb-store": "^1.5.5",
     "lunr": "^2.3.9",
     "mongodb": "^3.6.9",
     "mongodb-client-encryption": "^1.2.3",

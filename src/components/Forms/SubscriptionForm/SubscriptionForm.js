@@ -94,7 +94,7 @@ export default function SubscriptionForm({ isSidebar }) {
         type="submit"
         id="subscribe-btn"
         value="Subscribe"
-        className="form-control my-2"
+        className="form-control my-2 bg-primary text-color"
       />
     </form>
   );

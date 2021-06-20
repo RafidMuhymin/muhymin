@@ -1,4 +1,5 @@
 const path = require("path");
+const LoadablePlugin = require("@loadable/webpack-plugin");
 const fs = require("fs");
 const lunr = require("lunr");
 
@@ -115,6 +116,6 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    plugins: [],
+    plugins: [new LoadablePlugin()],
   });
 };
