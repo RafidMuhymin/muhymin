@@ -1,50 +1,54 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Layout from "../components/Templates/Layout/Layout";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import Search from "../components/Shared/Search/Search";
 import "../styles/search.scss";
 import SearchResult from "../components/PageComponents/Search/SearchResult";
+import LazyLoad from "../components/Shared/LazyLoad/LazyLoad";
+import loadable from "@loadable/component";
+import elasticlunr from "elasticlunr";
 
-export default function search({ location }) {
+const RecentBlogposts = loadable(() =>
+  import("../components/PageComponents/Search/RecentBlogposts")
+);
+
+export default function search({ data, location }) {
   const query = location.search.slice(1);
   const [results, setResults] = useState([]);
-  console.log(results);
+
+  const buildIndex = useCallback(() => {
+    const store = {};
+    const index = elasticlunr(function () {
+      this.setRef("id");
+      this.addField("title");
+      this.addField("slug");
+      this.addField("image");
+      this.saveDocument(false);
+
+      data.allMdx.nodes.forEach((node) => {
+        const id = node.id;
+        const doc = {
+          id,
+          excerpt: node.excerpt,
+          title: node.frontmatter.title,
+          slug: node.frontmatter.slug,
+          image: node.frontmatter.featuredImg.childImageSharp.gatsbyImageData,
+        };
+        this.addDoc(doc);
+        store[id] = doc;
+      });
+    });
+    return { index, store };
+  }, [data.allMdx.nodes]);
 
   useEffect(() => {
-    const { index, store } = window.__LUNR__.en;
-    const results = index.search(`*${query}*`).map(({ ref }) => store[ref]);
-    console.log(results);
+    const { index, store } = buildIndex();
+    const results = index
+      .search(`${query}`, { expand: true })
+      .map(({ ref }) => store[ref]);
     setResults(results);
-  }, [query]);
-
-  const getRecentBlogposts = () => {
-    const { allMdx } = useStaticQuery(graphql`
-      {
-        allMdx(
-          sort: { fields: frontmatter___date, order: DESC }
-          filter: { fileAbsolutePath: { regex: "posts/" } }
-          limit: 4
-        ) {
-          nodes {
-            id
-            excerpt
-            frontmatter {
-              title
-              slug
-              featuredImg {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-            }
-          }
-        }
-      }
-    `);
-    return allMdx.nodes;
-  };
-
+  }, [query, buildIndex]);
   return (
     <Layout>
       <main id="search-results" className="py-3 px-4">
@@ -78,23 +82,32 @@ export default function search({ location }) {
               <Search />
             </div>
             <h1 className="mt-3 text-center">Recent Blogposts</h1>
-            {getRecentBlogposts().map((blogpost) => {
-              const { id, excerpt } = blogpost;
-              const { title, slug, featuredImg } = blogpost.frontmatter;
-              const { gatsbyImageData } = featuredImg.childImageSharp;
-              return (
-                <SearchResult
-                  key={id}
-                  title={title}
-                  slug={slug}
-                  image={gatsbyImageData}
-                  excerpt={excerpt}
-                ></SearchResult>
-              );
-            })}
+            <LazyLoad>
+              <RecentBlogposts />
+            </LazyLoad>
           </>
         )}
       </main>
     </Layout>
   );
 }
+
+export const query = graphql`
+  {
+    allMdx {
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          title
+          slug
+          featuredImg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
+`;

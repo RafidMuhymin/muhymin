@@ -1,5 +1,7 @@
 import React from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Fallback from "../../Shared/Fallback/Fallback";
 import "./SubscriptionForm.scss";
 
 export default function SubscriptionForm({ isSidebar }) {
@@ -8,9 +10,12 @@ export default function SubscriptionForm({ isSidebar }) {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const [processing, setProcessing] = useState(false);
+
   const classname = isSidebar ? "mt-4 mb-2" : "";
 
   const onSubmit = (data) => {
+    setProcessing(true);
     const splittedName = data.name.split(" ");
     const lastname = splittedName.splice(splittedName.length - 1)[0];
     const firstname = splittedName.join(" ");
@@ -47,7 +52,7 @@ export default function SubscriptionForm({ isSidebar }) {
           method: "POST",
           body,
         })
-          .then(() => window.location.reload())
+          .then(() => setProcessing(false))
           .catch((err) => {
             console.log(err);
           });
@@ -90,12 +95,14 @@ export default function SubscriptionForm({ isSidebar }) {
         {...register("name", { required: true })}
       />
       {errors.name && <small>This field is required</small>}
-      <input
+      <button
         type="submit"
         id="subscribe-btn"
-        value="Subscribe"
         className="form-control my-2 bg-danger text-white"
-      />
+        disabled={processing}
+      >
+        {!processing ? <>Subscribe</> : <Fallback />}
+      </button>
     </form>
   );
 }

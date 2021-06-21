@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import "./AuthorBio.scss";
 import FollowButtons from "../Social/FollowButtons";
-import { LazyLoad } from "../../../Shared/LazyLoad/LazyLoad";
+import LazyLoad from "../../../Shared/LazyLoad/LazyLoad";
 import "./AuthorBio.scss";
 
 export default function AuthorBio({

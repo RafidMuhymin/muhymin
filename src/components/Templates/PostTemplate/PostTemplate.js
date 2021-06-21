@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import "./PostTemplate.scss";
 import Fallback from "../../Shared/Fallback/Fallback";
-import { LazyLoad } from "../../Shared/LazyLoad/LazyLoad";
+import LazyLoad from "../../Shared/LazyLoad/LazyLoad";
 
 const Comment = loadable(() => import("./Comment/Comment"));
 const ShareButtons = loadable(() => import("./Social/ShareButtons"));

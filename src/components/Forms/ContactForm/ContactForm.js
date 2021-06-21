@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import Fallback from "../../Shared/Fallback/Fallback";
 import "./ContactForm.scss";
 
 export default function ContactForm() {
@@ -8,8 +9,10 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const [processing, setProcessing] = useState(false);
 
   const onSubmit = (data) => {
+    setProcessing(true);
     const { name, info } = data;
     window.open(
       `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
@@ -19,8 +22,10 @@ export default function ContactForm() {
       method: "POST",
       body: JSON.stringify(data),
     })
-      .then((res) => console.log(res))
-      .then(() => window.location.reload())
+      .then((res) => {
+        console.log(res);
+        setProcessing(false);
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -56,12 +61,14 @@ export default function ContactForm() {
         {...register("info", { required: true })}
       ></textarea>
       {errors.info && <small>This field is required</small>}
-      <input
+      <button
         className="form-control my-3 bg-dark text-white"
         type="submit"
-        value="Contact"
         id="contact-btn"
-      />
+        disabled={processing}
+      >
+        {!processing ? <>Contact</> : <Fallback />}
+      </button>
       <small className="d-block my-2 text-center">
         <em>* You'll be redirected to your Mail Client when you submit.</em>
       </small>

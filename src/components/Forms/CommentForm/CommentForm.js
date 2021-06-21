@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import Fallback from "../../Shared/Fallback/Fallback";
 import "./CommentForm.scss";
 
 export default function CommentForm({
@@ -10,13 +11,17 @@ export default function CommentForm({
   selectedComment,
   setSelectedComment,
 }) {
+  const [processing, setProcessing] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   console.log(selectedComment);
+
   const onSubmit = async (data) => {
+    setProcessing(true);
     const postReq = (req, method, callback) => {
       fetch("/api/comment", {
         method,
@@ -34,6 +39,7 @@ export default function CommentForm({
     const setLocalStorage = (items) => {
       localStorage.setItem(`comments-${postTitle}`, JSON.stringify(items));
       setComments(items);
+      setProcessing(false);
     };
     if (!isReplyForm) {
       data.postTitle = postTitle;
@@ -82,11 +88,13 @@ export default function CommentForm({
           className="flex-grow-1"
           style={{ height: "1px", backgroundColor: "lightgray" }}
         ></div>
-        <input
+        <button
           className="form-control m-2 d-inline-block w-auto p-3 fs-5"
           type="submit"
-          value="Post your Comment"
-        />
+          disabled={processing}
+        >
+          {!processing ? <>Post Your Comment</> : <Fallback />}
+        </button>
         <div
           className="flex-grow-1"
           style={{ height: "1px", backgroundColor: "lightgray" }}

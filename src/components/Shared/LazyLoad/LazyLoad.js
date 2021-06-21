@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useIntersectionObserver } from "./useIntersectionObserver";
 
-export function LazyLoad({
+export default function LazyLoad({
   tag = "div",
   children,
   style,

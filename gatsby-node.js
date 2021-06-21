@@ -2,8 +2,6 @@ const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlInlineScriptPlugin = require("html-inline-script-webpack-plugin");
-const fs = require("fs");
-const lunr = require("lunr");
 
 exports.createPages = async ({ graphql, actions }) => {
   console.log(actions);
@@ -12,16 +10,8 @@ exports.createPages = async ({ graphql, actions }) => {
       allMdx(filter: { fileAbsolutePath: { regex: "posts/" } }) {
         edges {
           node {
-            id
-            excerpt
             frontmatter {
-              title
               slug
-              featuredImg {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
             }
           }
           previous {
@@ -42,38 +32,14 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   const { edges } = data.allMdx;
 
-  const store = {};
-  const fullIndex = {};
-  const index = lunr(function () {
-    this.ref("id");
-    this.field("title");
-    this.field("slug");
-    this.field("image");
-
-    edges.forEach(({ node }) => {
-      const id = node.id;
-      const doc = {
-        id,
-        excerpt: node.excerpt,
-        title: node.frontmatter.title,
-        slug: node.frontmatter.slug,
-        image: node.frontmatter.featuredImg.childImageSharp.gatsbyImageData,
-      };
-      this.add(doc);
-      store[id] = doc;
-    });
-  });
-
-  fullIndex["en"] = { index, store };
-  fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex));
-
   edges.forEach(({ node, previous, next }) => {
+    const { slug } = node.frontmatter;
     actions.createPage({
-      path: "/" + node.frontmatter.slug,
+      path: "/" + slug,
       component: path.resolve(
         "./src/components/Templates/PostTemplate/PostTemplate.js"
       ),
-      context: { slug: node.frontmatter.slug, previous: previous, next: next },
+      context: { slug, previous, next },
     });
   });
 
@@ -120,12 +86,12 @@ exports.onCreateWebpackConfig = ({
   actions.setWebpackConfig({
     plugins: [
       new LoadablePlugin(),
-      new HtmlWebpackPlugin(),
-      new HtmlInlineScriptPlugin([
-        /runtime~.+[.]js$/,
-        /app~.+[.]js$/,
-        /framework~.+[.]js$/,
-      ]),
+      // new HtmlWebpackPlugin(),
+      // new HtmlInlineScriptPlugin([
+      //   /runtime~.+[.]js$/,
+      //   /app~.+[.]js$/,
+      //   /framework~.+[.]js$/,
+      // ]),
     ],
   });
 };

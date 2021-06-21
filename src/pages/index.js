@@ -20,12 +20,16 @@ export default function Index() {
   const frontBanner = file.childImageSharp.gatsbyImageData;
   return (
     <Layout>
-      <BgImage image={frontBanner} className="row p-3">
+      <BgImage
+        style={{ backgroundClip: "border-box" }}
+        image={frontBanner}
+        className="row p-3"
+      >
         <div className="col-md-5">
           <SubscriptionForm></SubscriptionForm>
         </div>
       </BgImage>
-      <Bio></Bio>
+      <Bio />
     </Layout>
   );
 }
