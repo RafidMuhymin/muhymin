@@ -88,9 +88,15 @@ export default function PostTemplate({ data, pageContext }) {
       ]}
     >
       <div>
-        <div id="featured-image" className="d-flex justify-content-center">
+        <figure
+          id="featured-image"
+          className="d-flex flex-column justify-content-center px-4"
+        >
           <GatsbyImage image={fImgData} alt={title} />
-        </div>
+          <figcaption className="my-3 text-center fst-italic">
+            {title}
+          </figcaption>
+        </figure>
         <section id="blog-body" className="d-flex flex-wrap">
           <main className="p-3">
             <h1>{title}</h1>

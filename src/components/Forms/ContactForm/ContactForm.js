@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import Fallback from "../../Shared/Fallback/Fallback";
 import SubmitButton from "../SubmitButton";
 import "./ContactForm.scss";
 
