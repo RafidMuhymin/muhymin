@@ -96,7 +96,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        ignore: ["./src/styles/prismjs-a11y.css"],
+        ignore: ["src/styles/prismjs-a11y.css"],
         content: [
           path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
         ],
@@ -130,7 +130,6 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-minify`,
 
     {
       resolve: "gatsby-plugin-manifest",
