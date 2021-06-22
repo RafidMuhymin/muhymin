@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Fallback from "../../Shared/Fallback/Fallback";
+import SubmitButton from "../SubmitButton";
 import "./SubscriptionForm.scss";
 
 export default function SubscriptionForm({ isSidebar }) {
@@ -75,6 +76,7 @@ export default function SubscriptionForm({ isSidebar }) {
       ) : (
         <>
           <h1 className="text-center">Subscibe to Our Newsletter</h1>
+          <br />
           <h2 className="text-center">
             Get the Latest Updates Delivered right to Your Inbox
           </h2>
@@ -95,14 +97,13 @@ export default function SubscriptionForm({ isSidebar }) {
         {...register("name", { required: true })}
       />
       {errors.name && <small>This field is required</small>}
-      <button
-        type="submit"
+
+      <SubmitButton
         id="subscribe-btn"
         className="form-control my-2 bg-danger text-white"
-        disabled={processing}
-      >
-        {!processing ? <>Subscribe</> : <Fallback />}
-      </button>
+        boolean={processing}
+        value="Subscribe"
+      />
     </form>
   );
 }

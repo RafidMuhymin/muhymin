@@ -3,17 +3,15 @@
 @font-face {
   font-family: "Josefin Sans";
   font-style: normal;
-  src: url("../../../../static/fonts/josefin-sans-v17-latin-regular.eot");
+  src: url("../../../../static/fonts/play-v12-latin-regular.eot");
   src: local(""),
-    url("../../../../static/fonts/josefin-sans-v17-latin-regular.eot?#iefix")
+    url("../../../../static/fonts/play-v12-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../../../../static/fonts/josefin-sans-v17-latin-regular.woff2")
-      format("woff2"),
-    url("../../../../static/fonts/josefin-sans-v17-latin-regular.woff")
-      format("woff"),
-    url("../../../../static/fonts/josefin-sans-v17-latin-regular.ttf")
+    url("../../../../static/fonts/play-v12-latin-regular.woff2") format("woff2"),
+    url("../../../../static/fonts/play-v12-latin-regular.woff") format("woff"),
+    url("../../../../static/fonts/play-v12-latin-regular.ttf")
       format("truetype"),
-    url("../../../../static/fonts/josefin-sans-v17-latin-regular.svg#JosefinSans")
+    url("../../../../static/fonts/play-v12-latin-regular.svg#JosefinSans")
       format("svg");
   font-display: swap;
 }
@@ -59,6 +57,10 @@ body {
   max-width: 100vw;
   margin: 0;
   padding: 0;
+}
+
+#layout {
+  overflow-x: hidden;
 }
 
 hr {

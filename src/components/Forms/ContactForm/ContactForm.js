@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Fallback from "../../Shared/Fallback/Fallback";
+import SubmitButton from "../SubmitButton";
 import "./ContactForm.scss";
 
 export default function ContactForm() {
@@ -61,14 +62,14 @@ export default function ContactForm() {
         {...register("info", { required: true })}
       ></textarea>
       {errors.info && <small>This field is required</small>}
-      <button
+
+      <SubmitButton
         className="form-control my-3 bg-dark text-white"
-        type="submit"
         id="contact-btn"
-        disabled={processing}
-      >
-        {!processing ? <>Contact</> : <Fallback />}
-      </button>
+        boolean={processing}
+        value="Contact"
+      />
+
       <small className="d-block my-2 text-center">
         <em>* You'll be redirected to your Mail Client when you submit.</em>
       </small>

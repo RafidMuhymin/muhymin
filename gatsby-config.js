@@ -96,7 +96,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        ignore: ["prismjs/"],
+        ignore: ["./styles/prismjs-a11y.css"],
         content: [
           path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
         ],

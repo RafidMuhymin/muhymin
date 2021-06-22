@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Fallback from "../../Shared/Fallback/Fallback";
+import SubmitButton from "../SubmitButton";
 import "./CommentForm.scss";
 
 export default function CommentForm({
@@ -88,13 +89,13 @@ export default function CommentForm({
           className="flex-grow-1"
           style={{ height: "1px", backgroundColor: "lightgray" }}
         ></div>
-        <button
+
+        <SubmitButton
           className="form-control m-2 d-inline-block w-auto p-3 fs-5"
-          type="submit"
-          disabled={processing}
-        >
-          {!processing ? <>Post Your Comment</> : <Fallback />}
-        </button>
+          boolean={processing}
+          value="Post Your Comment"
+        />
+
         <div
           className="flex-grow-1"
           style={{ height: "1px", backgroundColor: "lightgray" }}
