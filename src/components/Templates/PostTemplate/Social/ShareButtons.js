@@ -23,7 +23,7 @@ export default function ShareButtons({ title, user_id, text }) {
           ],
           padding: 12, // padding within buttons (INTEGER)
           radius: 4, // the corner radius on each button (INTEGER)
-          show_total: true,
+          show_total: false,
           size: 40, // the size of each button (INTEGER)
 
           // OPTIONAL PARAMETERS

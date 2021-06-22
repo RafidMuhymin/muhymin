@@ -5,11 +5,11 @@ import "./Navbar.scss";
 
 export default function Navbar() {
   useEffect(() => {
-    document.body.style.overflowY = "scroll";
+    document.getElementById("layout").style.overflowY = "scroll";
     window.addEventListener("resize", () => {
       if (window.innerWidth > 767) {
         document.querySelector("#collapse").checked = false;
-        document.body.style.overflowY = "scroll";
+        document.getElementById("layout").style.overflowY = "scroll";
       }
     });
   }, []);

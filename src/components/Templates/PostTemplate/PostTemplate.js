@@ -90,10 +90,10 @@ export default function PostTemplate({ data, pageContext }) {
       <div>
         <figure
           id="featured-image"
-          className="d-flex flex-column justify-content-center px-4"
+          className="d-flex flex-wrap justify-content-center px-3"
         >
           <GatsbyImage image={fImgData} alt={title} />
-          <figcaption className="my-3 text-center fst-italic">
+          <figcaption className="my-3 text-center fst-italic w-100">
             {title}
           </figcaption>
         </figure>
