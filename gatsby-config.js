@@ -60,9 +60,15 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1024,
+              maxWidth: 2460,
               withWebp: true,
               withAvif: true,
+              showCaptions: true,
+              tracedSVG: true,
+              wrapperStyle: {
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+              },
             },
           },
           `gatsby-remark-smartypants`,

@@ -6,10 +6,12 @@ import "./Navbar.scss";
 export default function Navbar() {
   useEffect(() => {
     document.getElementById("layout").style.overflowY = "scroll";
+    document.body.style.overflowY = "auto";
     window.addEventListener("resize", () => {
       if (window.innerWidth > 767) {
         document.querySelector("#collapse").checked = false;
-        document.getElementById("layout").style.overflowY = "scroll";
+        document.getElementById("layout").style.overflowY = "auto";
+        document.body.style.overflowY = "auto";
       }
     });
   }, []);

@@ -43,8 +43,10 @@ export default function Layout({
         onClick={(e) => {
           if (e.target.checked === true) {
             document.getElementById("layout").style.overflowY = "hidden";
+            document.body.style.overflowY = "hidden";
           } else {
             document.getElementById("layout").style.overflowY = "scroll";
+            document.body.style.overflowY = "auto";
           }
         }}
       />
