@@ -130,6 +130,7 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-minify`,
 
     {
       resolve: "gatsby-plugin-manifest",
