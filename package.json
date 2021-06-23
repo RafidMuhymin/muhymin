@@ -75,7 +75,8 @@
     "react-helmet-async": "^1.0.9",
     "react-hook-form": "^7.9.0",
     "sass": "^1.33.0",
-    "sharethis-reactjs": "^1.6.0"
+    "sharethis-reactjs": "^1.6.0",
+    "svg-url-loader": "^7.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

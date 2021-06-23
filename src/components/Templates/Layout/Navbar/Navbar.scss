@@ -5,6 +5,9 @@
   }
   #brand-logo {
     height: 3em;
+    img {
+      height: 3em;
+    }
   }
   .collapsible-menu {
     height: calc(100vh - 5em);

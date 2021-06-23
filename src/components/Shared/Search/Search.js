@@ -1,11 +1,17 @@
 import { navigate } from "gatsby-link";
 import React from "react";
+import { useLocation } from "@reach/router";
 import "./Search.scss";
 
 export default function Search() {
+  const { pathname } = useLocation();
+
   const search = (evt) => {
     evt.preventDefault();
     const query = evt.target[0].value;
+    if (pathname === `/search`) {
+      document.getElementById("collapse").checked = false;
+    }
     navigate(`/search?${query}`);
   };
   return (

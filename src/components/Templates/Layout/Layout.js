@@ -45,8 +45,8 @@ export default function Layout({
             document.getElementById("layout").style.overflowY = "hidden";
             document.body.style.overflowY = "hidden";
           } else {
-            document.getElementById("layout").style.overflowY = "scroll";
-            document.body.style.overflowY = "auto";
+            document.getElementById("layout").style.overflowY = "visible";
+            document.body.style.overflowY = "scroll";
           }
         }}
       />

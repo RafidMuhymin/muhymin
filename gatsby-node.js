@@ -1,10 +1,7 @@
 const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlInlineScriptPlugin = require("html-inline-script-webpack-plugin");
 
 exports.createPages = async ({ graphql, actions }) => {
-  console.log(actions);
   const { data } = await graphql(`
     {
       allMdx(filter: { fileAbsolutePath: { regex: "posts/" } }) {
@@ -84,14 +81,6 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    plugins: [
-      new LoadablePlugin(),
-      // new HtmlWebpackPlugin(),
-      // new HtmlInlineScriptPlugin([
-      //   /runtime~.+[.]js$/,
-      //   /app~.+[.]js$/,
-      //   /framework~.+[.]js$/,
-      // ]),
-    ],
+    plugins: [new LoadablePlugin()],
   });
 };

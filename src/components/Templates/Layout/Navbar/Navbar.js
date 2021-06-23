@@ -2,16 +2,17 @@ import { Link } from "gatsby";
 import React, { useEffect } from "react";
 import Search from "../../../Shared/Search/Search";
 import "./Navbar.scss";
+import logo from "../../../../../static/logo.svg";
 
 export default function Navbar() {
   useEffect(() => {
-    document.getElementById("layout").style.overflowY = "scroll";
-    document.body.style.overflowY = "auto";
+    document.getElementById("layout").style.overflowY = "visible";
+    document.body.style.overflowY = "scroll";
     window.addEventListener("resize", () => {
       if (window.innerWidth > 767) {
         document.querySelector("#collapse").checked = false;
-        document.getElementById("layout").style.overflowY = "auto";
-        document.body.style.overflowY = "auto";
+        document.getElementById("layout").style.overflowY = "visible";
+        document.body.style.overflowY = "scroll";
       }
     });
   }, []);
@@ -22,7 +23,7 @@ export default function Navbar() {
     >
       <div className="logobar me-0 me-md-auto py-2 px-3 p-md-0 w-100 d-flex align-items-center justify-content-between">
         <Link id="brand-logo" to="/">
-          <img className="h-100" src="/logo.svg" alt="The Muhymin Blog Logo" />
+          <img src={logo} alt="The Muhymin Blog Logo" />
         </Link>
         <label
           htmlFor="collapse"

@@ -83,7 +83,11 @@ export default function Blog({ data, pageContext }) {
       </div>
       <div id="pagination-navlinks" className="mx-auto text-center mb-3">
         <Link to="/blog">…</Link>
-        {currentPage > 1 && <Link to={`/blog/${currentPage - 1}`}>{`<`}</Link>}
+        {currentPage > 1 && (
+          <Link
+            to={`/blog${currentPage > 2 ? "/" + currentPage - 1 : null}`}
+          >{`<`}</Link>
+        )}
 
         <span className="current">{currentPage}</span>
 

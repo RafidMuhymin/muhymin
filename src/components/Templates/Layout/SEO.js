@@ -2,6 +2,7 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import favicon from "../../../../static/favicon.svg";
 
 const SEO = ({
   description,
