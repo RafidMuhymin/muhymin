@@ -21,6 +21,7 @@ export default function Index() {
   return (
     <Layout>
       <BgImage
+        loading="eager"
         style={{ backgroundClip: "border-box" }}
         image={frontBanner}
         className="row p-3"

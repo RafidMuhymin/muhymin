@@ -46,6 +46,18 @@ const SEO = ({
         }}
         title={title}
         titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+        link={[
+          {
+            rel: "icon",
+            href: `${favicon}`,
+            type: "image/svg+xml",
+          },
+          {
+            rel: "alternate icon",
+            href: `${siteURL}/favicon.ico`,
+            type: "image/svg+xml",
+          },
+        ]}
         meta={[
           {
             name: `description`,

@@ -10,15 +10,14 @@ export default function About({ data }) {
 
   return (
     <Layout>
-      <BgImage image={frontBanner}>
+      <BgImage loading="eager" image={frontBanner}>
         <div id="about-head">
           <div className="h6">A few words</div>
           <div className="divider my-3"></div>
           <h2>About Me</h2>
         </div>
       </BgImage>
-
-      <Bio></Bio>
+      <Bio />
     </Layout>
   );
 }

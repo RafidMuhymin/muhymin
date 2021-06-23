@@ -82,19 +82,24 @@ export default function SubscriptionForm({ isSidebar }) {
         </>
       )}
 
-      <input
-        type="email"
-        className="form-control my-2"
-        placeholder="Enter Your Email Address"
-        {...register("email", { required: true })}
-      />
+      <label>
+        Enter Your Email Address
+        <input
+          type="email"
+          className="form-control my-2"
+          {...register("email", { required: true })}
+        />
+      </label>
       {errors.email && <small>This field is required</small>}
-      <input
-        type="text"
-        placeholder="Enter Your Full Name"
-        className="form-control my-2"
-        {...register("name", { required: true })}
-      />
+
+      <label>
+        Enter Your Full Name
+        <input
+          type="text"
+          className="form-control my-2"
+          {...register("name", { required: true })}
+        />
+      </label>
       {errors.name && <small>This field is required</small>}
 
       <SubmitButton

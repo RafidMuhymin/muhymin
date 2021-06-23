@@ -19,6 +19,7 @@ export default function Bio() {
   return (
     <div className="row front-bio">
       <BgImage
+        loading="eager"
         image={profilePic}
         className="col-md-6 p-5 position-relative profile-picture"
       >

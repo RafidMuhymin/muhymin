@@ -40,7 +40,7 @@ module.exports = {
       options: {
         defaults: {
           formats: [`auto`, `webp`, `avif`],
-          placeholder: `tracedSVG`,
+          placeholder: `blurred`,
         },
       },
     },
@@ -66,10 +66,6 @@ module.exports = {
               withAvif: true,
               showCaptions: true,
               tracedSVG: true,
-              wrapperStyle: {
-                paddingLeft: "1rem",
-                paddingRight: "1rem",
-              },
             },
           },
           `gatsby-remark-smartypants`,
