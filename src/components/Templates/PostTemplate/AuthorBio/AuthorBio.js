@@ -15,7 +15,8 @@ export default function AuthorBio({
   return (
     <div id="authorBio" className="my-4">
       <h2>About The Author...</h2>
-      {authorProfilePicture ? (
+      
+      {/*{authorProfilePicture ? (
         <GatsbyImage
           className="w-100 h-0 rounded-3"
           image={authorProfilePicture}
@@ -24,12 +25,21 @@ export default function AuthorBio({
       ) : (
         <StaticImage
           className="w-100 h-0 rounded-3"
-          src="../../../../data/images/profilePicture/rafid-muhymin.jpg"
+          src= authorProfilePicture ? `../../../../data/images/profilePicture/${authorProfilePicture}` : "../../../../data/images/profilePicture/rafid-muhymin.jpg"
           alt="Rafid Muhymin Wafi"
           placeholder="tracedSVG"
           width={500}
-        ></StaticImage>
-      )}
+        />
+      )}*/}
+      
+      <StaticImage
+      className="w-100 h-0 rounded-3"
+      src= authorProfilePicture ? `../../../../data/images/profilePicture/${authorProfilePicture}` : "../../../../data/images/profilePicture/rafid-muhymin.jpg"
+      alt="Rafid Muhymin Wafi"
+      placeholder="tracedSVG"
+      width={500}
+      />
+      
       <div className="py-2">
         <div className="text-center">
           <h3>Hey, I'm {author}!</h3>

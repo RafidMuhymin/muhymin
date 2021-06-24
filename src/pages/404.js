@@ -3,7 +3,7 @@ import Layout from "../components/Templates/Layout/Layout";
 import Search from "../components/Shared/Search/Search";
 import SubscriptionForm from "../components/Forms/SubscriptionForm/SubscriptionForm";
 import { Link } from "gatsby";
-import error from "../../static/error.svg";
+import error from "!svg-url-loader!../../static/error.svg";
 import "../styles/404.scss";
 
 export default function NotFound() {

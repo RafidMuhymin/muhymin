@@ -29,7 +29,7 @@ export default function PostTemplate({ data, pageContext }) {
   const authorTwitter = fm.author?.twitter || sm.social.twitter;
   const authorBio = fm.author?.bio || sm.author.summary;
   const authorProfilePicture =
-    fm.author?.profilePicture?.childImageSharp?.gatsbyImageData;
+    fm.author?.profilePicture;
 
   const fImgData = fm.featuredImg.childImageSharp.gatsbyImageData;
   const imageExt = fm.featuredImg.extension;
