@@ -33,8 +33,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-svg-url-loader`,
-
+    
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
