@@ -29,7 +29,7 @@ export default function PostTemplate({ data, pageContext }) {
   const authorTwitter = fm.author?.twitter || sm.social.twitter;
   const authorBio = fm.author?.bio || sm.author.summary;
   const authorProfilePicture =
-    fm.author?.profilePicture;
+    fm.author?.profilePicture?.childImageSharp.gatsbyImageData || data.file.childImageSharp.gatsbyImageData;
 
   const fImgData = fm.featuredImg.childImageSharp.gatsbyImageData;
   const imageExt = fm.featuredImg.extension;
@@ -204,6 +204,11 @@ export const query = graphql`
           extension
         }
       }
+    }
+    file(relativePath: { eq: "images/profilePicture/rafid-muhymin.jpg" }) {
+    childImageSharp {
+    gatsbyImageData
+    }
     }
   }
 `;

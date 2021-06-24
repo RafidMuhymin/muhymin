@@ -32,11 +32,10 @@ export default function AuthorBio({
         />
       )}*/}
       
-      <StaticImage
+      <GatsbyImage
       className="w-100 h-0 rounded-3"
-      src={`../../../../data/images/profilePicture/${authorProfilePicture ? authorProfilePicture : "rafid-muhymin.jpg"}`}
-      alt="Rafid Muhymin Wafi"
-      width={500}
+      image={authorProfilePicture}
+      alt={author}
       />
       
       <div className="py-2">
