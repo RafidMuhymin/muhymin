@@ -33,14 +33,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-svg-url-loader`,
 
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           formats: [`auto`, `webp`, `avif`],
-          placeholder: `blurred`,
+          placeholder: `tracedSVG`,
         },
       },
     },
@@ -66,6 +65,10 @@ module.exports = {
               withAvif: true,
               showCaptions: true,
               tracedSVG: true,
+              wrapperStyle: {
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+              },
             },
           },
           `gatsby-remark-smartypants`,
@@ -130,27 +133,26 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-gatsby-cloud`,
 
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
-    //     short_name: `Soft Hard System`,
-    //     description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
-    //     lang: "en",
-    //     start_url: `/`,
-    //     background_color: `#fff`,
-    //     theme_color: `#fff`,
-    //     display: `standalone`,
-    //     crossOrigin: `use-credentials`,
-    //     icon: "static/favicon.svg",
-    //     include_favicon: false,
-    //     cache_busting_mode: "name",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
+        short_name: `Soft Hard System`,
+        description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
+        lang: "en",
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        crossOrigin: `use-credentials`,
+        icon: "static/favicon.svg",
+        cache_busting_mode: "name",
+      },
+    },
 
     {
       resolve: "gatsby-plugin-offline",

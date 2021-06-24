@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import favicon from "../../../../static/favicon.svg";
 
 const SEO = ({
@@ -39,7 +39,6 @@ const SEO = ({
   const siteURL = site.siteMetadata.siteUrl;
 
   return (
-    <HelmetProvider>
       <Helmet
         htmlAttributes={{
           lang: `en-US`,
@@ -133,7 +132,6 @@ const SEO = ({
           },
         ].concat(meta)}
       />
-    </HelmetProvider>
   );
 };
 
