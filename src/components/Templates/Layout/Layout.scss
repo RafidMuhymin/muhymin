@@ -14,7 +14,7 @@
       format("truetype"),
     url("../../../../static/fonts/play-v12-latin-regular.svg#JosefinSans")
       format("svg");
-  font-display: block;
+  font-display: fallback;
 }
 
 .mix-blend-multiply {
