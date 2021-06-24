@@ -84,17 +84,6 @@ form small {
   color: #dc3545;
 }
 
-figure.gatsby-resp-image-figure {
-  .gatsby-resp-image-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-  }
-  figcaption {
-    text-align: center;
-    font-style: italic;
-  }
-}
 /*! purgecss start ignore */
 .gatsby-highlight pre code[class*="language-"] {
   font-family: "Consolas", "Courier New", Courier, monospace;
@@ -135,6 +124,18 @@ blockquote {
     display: block;
     text-align: end;
     color: gray;
+  }
+}
+
+figure.gatsby-resp-image-figure {
+  .gatsby-resp-image-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+  }
+  figcaption {
+    text-align: center;
+    font-style: italic;
   }
 }
 
