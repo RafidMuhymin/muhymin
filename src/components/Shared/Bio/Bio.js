@@ -22,13 +22,12 @@ export default function Bio() {
         loading="eager"
         image={profilePic}
         className="col-md-6 p-5 position-relative profile-picture"
-      >
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark mix-blend-multiply overlay"></div>
-      </BgImage>
+      />
+      
       <div className="col-md-6 p-5">
         <h3>Rafid Muhymin Wafi</h3>
         <br />
-        <div className="divider w-25"></div>
+        <hr className="w-25" />
         <br />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum

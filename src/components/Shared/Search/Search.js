@@ -10,7 +10,9 @@ export default function Search() {
     evt.preventDefault();
     const query = evt.target[0].value;
     if (pathname === `/search`) {
-      document.getElementById("collapse").checked = false;
+      document.querySelector("#collapse").checked = false;
+      document.querySelector("#layout").style.overflowY = "visible";
+      document.body.style.overflowY = "scroll";
     }
     navigate(`/search?${query}`);
   };

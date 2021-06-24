@@ -42,10 +42,10 @@ export default function Layout({
         className="d-none"
         onClick={(e) => {
           if (e.target.checked === true) {
-            document.getElementById("layout").style.overflowY = "hidden";
+            document.querySelector("#layout").style.overflowY = "hidden";
             document.body.style.overflowY = "hidden";
           } else {
-            document.getElementById("layout").style.overflowY = "visible";
+            document.querySelector("#layout").style.overflowY = "visible";
             document.body.style.overflowY = "scroll";
           }
         }}

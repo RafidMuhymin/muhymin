@@ -33,13 +33,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-svg-url-loader`,
 
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           formats: [`auto`, `webp`, `avif`],
-          placeholder: `tracedSVG`,
+          placeholder: `blurred`,
         },
       },
     },
@@ -65,11 +66,6 @@ module.exports = {
               withAvif: true,
               showCaptions: true,
               tracedSVG: true,
-              wrapperStyle: {
-                paddingLeft: "1rem",
-                paddingRight: "1rem",
-              },
-            },
           },
           `gatsby-remark-smartypants`,
           {
@@ -150,6 +146,7 @@ module.exports = {
         display: `standalone`,
         crossOrigin: `use-credentials`,
         icon: "static/favicon.svg",
+        include_favicon: false,
         cache_busting_mode: "name",
       },
     },

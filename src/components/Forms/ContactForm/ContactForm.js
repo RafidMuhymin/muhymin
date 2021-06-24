@@ -33,33 +33,45 @@ export default function ContactForm() {
   return (
     <form id="contact-form" className="p-4" onSubmit={handleSubmit(onSubmit)}>
       <h2 className="text-center">Send Us a Message</h2>
+      
+      <label>
+      Enter Your Email Address
       <input
         className="form-control my-3"
         type="email"
-        placeholder="Enter Your Email Address"
         {...register("email", { required: true })}
       />
+      </label>
       {errors.name && <small>This field is required</small>}
+      
+      <label>
       <input
         className="form-control my-3"
         type="text"
         placeholder="Enter Your Name"
         {...register("name", { required: true })}
       />
+      </label>
       {errors.email && <small>This field is required</small>}
+      
+      <label>
+      Enter Your Website URL
       <input
         className="form-control my-3"
         type="url"
-        placeholder="Enter Your Website URL (Optional)"
         {...register("website")}
       />
+      </label>
+      
+      <label>
+      Type What You Want to Talk About
       <textarea
         className="form-control my-3"
         cols="30"
         rows="5"
-        placeholder="Type What You Want to Talk About"
         {...register("info", { required: true })}
       ></textarea>
+      </label>
       {errors.info && <small>This field is required</small>}
 
       <SubmitButton

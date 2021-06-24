@@ -6,12 +6,12 @@ import logo from "../../../../../static/logo.svg";
 
 export default function Navbar() {
   useEffect(() => {
-    document.getElementById("layout").style.overflowY = "visible";
+    document.querySelector("#layout").style.overflowY = "visible";
     document.body.style.overflowY = "scroll";
     window.addEventListener("resize", () => {
       if (window.innerWidth > 767) {
         document.querySelector("#collapse").checked = false;
-        document.getElementById("layout").style.overflowY = "visible";
+        document.querySelector("#layout").style.overflowY = "visible";
         document.body.style.overflowY = "scroll";
       }
     });
