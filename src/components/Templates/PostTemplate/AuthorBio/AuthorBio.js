@@ -34,9 +34,8 @@ export default function AuthorBio({
       
       <StaticImage
       className="w-100 h-0 rounded-3"
-      src= authorProfilePicture ? `../../../../data/images/profilePicture/${authorProfilePicture}` : "../../../../data/images/profilePicture/rafid-muhymin.jpg"
+      src={`../../../../data/images/profilePicture/${authorProfilePicture ? authorProfilePicture : "rafid-muhymin.jpg"}`}
       alt="Rafid Muhymin Wafi"
-      placeholder="tracedSVG"
       width={500}
       />
       
