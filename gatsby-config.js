@@ -33,6 +33,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-svg-url-loader`,
     
     {
       resolve: `gatsby-plugin-sharp`,
@@ -65,6 +66,7 @@ module.exports = {
               withAvif: true,
               showCaptions: true,
               tracedSVG: true,
+              }
           },
           `gatsby-remark-smartypants`,
           {
