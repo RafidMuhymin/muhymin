@@ -207,15 +207,9 @@ export const query = graphql`
       }
     }
     file(relativePath: { eq: "images/profilePicture/rafid-muhymin.jpg" }) {
-<<<<<<< HEAD
       childImageSharp {
         gatsbyImageData
       }
-=======
-    childImageSharp {
-    gatsbyImageData
-    }
->>>>>>> 36142e9bbde819fe0a5b1fafc2727b7fbb86fc9e
     }
   }
 `;
