@@ -17,11 +17,11 @@ export default function AuthorBio({
     <div id="authorBio" className="my-4">
       <h2>About The Author...</h2>
 
-      <GatsbyImage
+      {/* <GatsbyImage
         className="w-100 h-0 rounded-3"
         image={authorProfilePicture}
         alt={author}
-      />
+      /> */}
 
       <div className="py-2">
         <div className="text-center">
