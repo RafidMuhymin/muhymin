@@ -2,7 +2,8 @@ import { Link } from "gatsby";
 import React, { useEffect } from "react";
 import Search from "../../../Shared/Search/Search";
 import "./Navbar.scss";
-import logo from "../../../../../static/logo.svg";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import logo from "!svg-url-loader!../../../../../static/logo.svg";
 
 export default function Navbar() {
   useEffect(() => {

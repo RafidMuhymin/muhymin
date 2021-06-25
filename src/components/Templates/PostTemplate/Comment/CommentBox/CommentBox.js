@@ -1,5 +1,6 @@
 import React from "react";
-import commenter from "../../../../../../static/commenter.svg";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import commenter from "!svg-url-loader!../../../../../../static/commenter.svg";
 import "./CommentBox.scss";
 
 export default function CommentBox({

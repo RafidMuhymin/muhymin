@@ -1,7 +1,7 @@
 @use "poly-fluid-sizing" as pfz;
 
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: "Play";
   font-style: normal;
   src: url("../../../../static/fonts/play-v12-latin-regular.eot");
   src: local(""),
@@ -12,7 +12,7 @@
     url("../../../../static/fonts/play-v12-latin-regular.woff") format("woff"),
     url("../../../../static/fonts/play-v12-latin-regular.ttf")
       format("truetype"),
-    url("../../../../static/fonts/play-v12-latin-regular.svg#JosefinSans")
+    url("../../../../static/fonts/play-v12-latin-regular.svg#Play")
       format("svg");
 }
 
@@ -83,17 +83,6 @@ form small {
   color: #dc3545;
 }
 
-figure.gatsby-resp-image-figure {
-  .gatsby-resp-image-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-  }
-  figcaption {
-    text-align: center;
-    font-style: italic;
-  }
-}
 /*! purgecss start ignore */
 .gatsby-highlight pre code[class*="language-"] {
   font-family: "Consolas", "Courier New", Courier, monospace;
@@ -137,9 +126,20 @@ blockquote {
   }
 }
 
+figure.gatsby-resp-image-figure {
+  .gatsby-resp-image-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+  }
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
 * {
-  font-family: "Josefin Sans";
-  font-display: swap;
+  font-family: "Play";
   @include pfz.poly-fluid-sizing(
     "font-size",
     (

@@ -12,6 +12,7 @@ import "./Layout.scss";
 export default function Layout({
   description,
   meta,
+  link,
   imagePath,
   imageAlt,
   imageHeight,
@@ -27,6 +28,7 @@ export default function Layout({
       <SEO
         description={description}
         meta={meta}
+        link={link}
         imagePath={imagePath}
         imageAlt={imageAlt}
         imageHeight={imageHeight}

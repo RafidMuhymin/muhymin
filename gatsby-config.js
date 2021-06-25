@@ -34,7 +34,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-svg-url-loader`,
-    
+
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -66,7 +66,7 @@ module.exports = {
               withAvif: true,
               showCaptions: true,
               tracedSVG: true,
-              }
+            },
           },
           `gatsby-remark-smartypants`,
           {
@@ -76,6 +76,7 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },
@@ -134,23 +135,23 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-gatsby-cloud`,
 
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
-        short_name: `Soft Hard System`,
-        description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
-        lang: "en",
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
-        display: `standalone`,
-        crossOrigin: `use-credentials`,
-        icon: "static/favicon.svg",
-        include_favicon: false,
-        cache_busting_mode: "name",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
+    //     short_name: `Soft Hard System`,
+    //     description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
+    //     lang: "en",
+    //     start_url: `/`,
+    //     background_color: `#fff`,
+    //     theme_color: `#fff`,
+    //     display: `standalone`,
+    //     crossOrigin: `use-credentials`,
+    //     icon: "static/favicon.svg",
+    //     include_favicon: false,
+    //     cache_busting_mode: "name",
+    //   },
+    // },
 
     {
       resolve: "gatsby-plugin-offline",

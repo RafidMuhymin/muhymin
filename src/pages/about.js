@@ -7,10 +7,12 @@ import { graphql } from "gatsby";
 
 export default function About({ data }) {
   const frontBanner = data.file.childImageSharp.gatsbyImageData;
-
+  const frontBannerAvif = frontBanner.images.sources[0].srcSet.slice(0, 75);
   return (
-    <Layout>
-      <BgImage loading="eager" image={frontBanner}>
+    <Layout
+      link={[{ rel: "preload", as: "image", href: `${frontBannerAvif}` }]}
+    >
+      <BgImage image={frontBanner}>
         <div id="about-head">
           <div className="h6">A few words</div>
           <div className="divider my-3"></div>

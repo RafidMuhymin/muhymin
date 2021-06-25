@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import "./AuthorBio.scss";
 import FollowButtons from "../Social/FollowButtons";
 import LazyLoad from "../../../Shared/LazyLoad/LazyLoad";
@@ -12,24 +12,11 @@ export default function AuthorBio({
   authorTwitter,
   authorProfilePicture,
 }) {
+  console.log(authorProfilePicture);
   return (
     <div id="authorBio" className="my-4">
       <h2>About The Author...</h2>
-      {authorProfilePicture ? (
-        <GatsbyImage
-          className="w-100 h-0 rounded-3"
-          image={authorProfilePicture}
-          alt={author}
-        ></GatsbyImage>
-      ) : (
-        <StaticImage
-          className="w-100 h-0 rounded-3"
-          src="../../../../data/images/profilePicture/rafid-muhymin.jpg"
-          alt="Rafid Muhymin Wafi"
-          placeholder="tracedSVG"
-          width={500}
-        ></StaticImage>
-      )}
+
       <div className="py-2">
         <div className="text-center">
           <h3>Hey, I'm {author}!</h3>

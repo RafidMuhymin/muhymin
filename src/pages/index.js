@@ -18,16 +18,14 @@ export default function Index() {
   `);
 
   const frontBanner = file.childImageSharp.gatsbyImageData;
+  const frontBannerAvif = frontBanner.images.sources[0].srcSet.slice(0, 75);
   return (
-    <Layout>
-      <BgImage
-        loading="eager"
-        style={{ backgroundClip: "border-box" }}
-        image={frontBanner}
-        className="row p-3"
-      >
+    <Layout
+      link={[{ rel: "preload", as: "image", href: `${frontBannerAvif}` }]}
+    >
+      <BgImage image={frontBanner} className="row p-3">
         <div className="col-md-5">
-          <SubscriptionForm></SubscriptionForm>
+          <SubscriptionForm />
         </div>
       </BgImage>
       <Bio />

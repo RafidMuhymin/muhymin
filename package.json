@@ -48,7 +48,7 @@
     "gatsby-plugin-sharp": "^3.3.0",
     "gatsby-plugin-sitemap": "^4.1.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
-    "gatsby-remark-autolink-headers": "^4.2.0",
+    "gatsby-remark-autolink-headers": "^4.5.0",
     "gatsby-remark-embed-snippet": "^6.2.0",
     "gatsby-remark-images": "^5.2.1",
     "gatsby-remark-prismjs": "^5.2.1",
