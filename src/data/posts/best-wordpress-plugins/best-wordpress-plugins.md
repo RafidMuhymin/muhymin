@@ -3,6 +3,7 @@ title: Best WordPress Plugins
 slug: best-wordpress-plugins
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/best-wordpress-plugins.png
+tocDepth: 3
 ---
 
 WordPress is the most popular CMS which started its journey in 2003. And now more than 35% of the total websites are powered by WordPress.
@@ -15,19 +16,17 @@ So, I have created this list of **8 Best WordPress Plugins** to enhance your web
 
 \[fluentform id="1"\]
 
-# 8 Best WordPress Plugins
-
 This list of **8 Best WordPress Plugins** will help you to install only the essential WordPress plugins and not to slow down your website installing unnecessary garbage.
 
 I have included only the top WordPress plugins. I have included the 2 best WordPress plugins for each factor, one the best and an alternative plugin in case you need something different. I have also included their prices and details to save your valuable time.
 
-# 1\. Best WordPress Plugins for Caching
+## 1\. Best WordPress Plugins for Caching
 
 Speed is a factor that must be checked when it comes to a website. You must make your website to load under 3s (2s is better). To achieve this, you need to enable caching, minify website code, enable GZip compression, optimize your images, lazy-load your contents, and many more.
 
 Doing all of this by yourself is a matter of headache. But these are something that must be done. So, you must hire a developer to automate the process. Or you can install a plugin that'll take care of all these for you.
 
-## [WP Rocket](https://wp-rocket.me)
+### [WP Rocket](https://wp-rocket.me)
 
 [![wp rocket best wordpress caching plugin](./images/logo-dark.png)](https://wp-rocket.me)
 
@@ -58,9 +57,9 @@ WPRocket is a premium plugin. It doesn't have a free plugin. It comes with a pri
 
 WPRocket gives a 10% discount to all and a 20% discount to Imagify, an image optimizer plugin, users.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [Swift Performance](https://swiftperformance.io)
+### [Swift Performance](https://swiftperformance.io)
 
 [![swift performance best wordpress caching plugin](./images/logo-light.png)](https://swiftperformance.io/)
 
@@ -95,7 +94,7 @@ You can get a 40% discount by applying the promo code 'SEMDEV40'.
 
 Both WP Rocket & Swift Performance are very good at optimizing your website for performance. You'll not need to install another plugin for extra optimization. You should go for Swift Performance Lite if you want a free plugin.
 
-# 2\. Best WordPress Plugins for SEO
+## 2\. Best WordPress Plugins for SEO
 
 SEO is a must for every blog if you want to drive more organic traffic to your website. You must do proper keyword research, get links to your website, design your website beautifully, etc.
 
@@ -103,7 +102,7 @@ Off-page SEO is not everything. On-page SEO or technical SEO is more important. 
 
 On-page SEO includes submitting your XML sitemaps to search engines, optimizing your content for keywords, optimizing your URL, title, and meta description which is shown in the SERP.
 
-## [RankMath SEO](https://rankmath.com/wordpress/plugin/seo-suite/)
+### [RankMath SEO](https://rankmath.com/wordpress/plugin/seo-suite/)
 
 [![rank math seo best wordpress seo plugin](./images/Rank-Math-SEO-Social-1024x538.png)](https://rankmath.com/wordpress/plugin/seo-suite/)
 
@@ -143,9 +142,9 @@ According to rankmath.com RankMath has a total of 128 features! It has all the b
 
 Though RankMath is full of powerful features, it is fully free. It'll not cost you a single penny.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [Yoast SEO](https://yoast.com/wordpress/plugins/seo/)
+### [Yoast SEO](https://yoast.com/wordpress/plugins/seo/)
 
 [![yoast seo best wordpress seo plugin](./images/FB_Yoast_SEO_2_3_1200x628-1024x536.png)](https://yoast.com/wordpress/plugins/seo/)
 
@@ -176,13 +175,13 @@ Yoast SEO has a free plugin that is the most popular WordPress SEO plugin. The p
 
 SEO by RankMath is the best WordPress SEO plugin and it is fully free. Even Yoast Premium has very few features compared to RankMath.
 
-# 3\. Best WordPress Plugins for Analytics
+## 3\. Best WordPress Plugins for Analytics
 
 Analytics is very important for you if you are serious about your site. Google Analytics is a free service that can show your total visitor's count, information about your visitors, etc. metrics.
 
 But getting used to Google Analytics takes time. Also finding advanced metrics can be difficult. So, developers have created many plugins to create this work easy for you. A WordPress analytics plugin can show your analytics data directly on your dashboard.
 
-## [Monsterinsights](https://monsterinsights.com)
+### [Monsterinsights](https://monsterinsights.com)
 
 [![monsterinsights best wordpress analytics plugin](./images/home-graph-preview-1024x636.png)](https://monsterinsights.com)
 
@@ -203,7 +202,7 @@ Monsterinsights has a free plugin available in the WordPress repository. It incl
 
 The free version is more than enough for most bloggers. The premium version is good for people who need more advanced analytics data.
 
-## Alternative Plugin
+### Alternative Plugin
 
 There is no viable alternative to Monsterinsights. Exactmetrics is a plugin that comes from the same developers that worked behind MonsterInsights. It has all the features that Monsterinsights has. Its free version also has the same features as Monsterinsights. It also comes from the same team that worked behind creating Monsterinsights. Its pricing structure is also very similar to Monsterinsights.
 
@@ -211,7 +210,7 @@ There is no viable alternative to Monsterinsights. Exactmetrics is a plugin that
 
 You should choose Monsterinsights. Also, you can use Exactmetrics. There is no difference between them. Both have a free plugin that is good for basic analytics.
 
-# 4\. Best WordPress Plugins for Security
+## 4\. Best WordPress Plugins for Security
 
 Security is important to all. It shouldn't be compromised a little bit. For security, a plugin isn't enough to protect your site. You should buy web hosting from a good host and install Cloudflare on your site.
 
@@ -219,7 +218,7 @@ A good host always keeps its hardware updated and scans for malware to keep your
 
 Now, we come to the plugin. A plugin can help you further secure your website. It can also be very helpful if you don't use Cloudflare or have a bad hosting.
 
-## [Sucuri Security](https://sucuri.net/wordpress-security-plugin/)
+### [Sucuri Security](https://sucuri.net/wordpress-security-plugin/)
 
 [![sucuri best wordpress security plugin](./images/SucuriWebsite-1024x512.png)](https://sucuri.net/wordpress-security-plugin/)
 
@@ -248,9 +247,9 @@ Sucuri Security has a free plugin available in the WordPress repository. It has 
 
 The premium version is an all-in-one package that not only protects your website but also enhances its performance. It makes it the best security plugin in the industry.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [Wordfence Security](https://wordfence.com)
+### [Wordfence Security](https://wordfence.com)
 
 [![wordfence best wordpress security plugin](./images/Promo-Logo.png)](https://wordfence.com)
 
@@ -275,7 +274,7 @@ Wordfence Security is awesome and one of the top WordPress plugins for security.
 
 WordFence Security has a free WordPress plugin. It comes with a Web Application Firewall (WAF) and a malware scanner. It is enough for many people. The premium version unlocks more features that can harden your website's security.
 
-## What WordPress Security Plugin Should You Choose?
+### What WordPress Security Plugin Should You Choose?
 
 Sucuri Security is an all-in-one security package with a CDN included for performance. If you want a free plugin then WordFence Security is better than Sucuri's free plugin with a free WAF included.
 
@@ -283,7 +282,7 @@ The full version of Sucuri retails at 199$. The premium version of WordFence is 
 
 \[fluentform id="1"\]
 
-# 5\. Best WordPress Plugins for Backup
+## 5\. Best WordPress Plugins for Backup
 
 What will you do if you find your website hacked after getting up the next morning? You can do nothing but wondering â€œWho hacked my site?â€
 
@@ -291,7 +290,7 @@ But you could do something if you have had backed up your website. A good web ho
 
 But you can also use a WordPress Plugin to do that for you. You'll also get some advanced features.
 
-## [BlogVault](https://blogvault.net)
+### [BlogVault](https://blogvault.net)
 
 [![blogvault best wordpress backup plugin](./images/Bv-social-1200-1-1024x538.png)](https://blogvault.net)
 
@@ -321,9 +320,9 @@ BlogVault doesn't have a free plugin. But the premium version is the king of all
 
 You can get a 10% discount by applying the promo code 'BLID10OFFBV' at checkout.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [UpdraftPlus](https://updraftplus.com)
+### [UpdraftPlus](https://updraftplus.com)
 
 [![updraftplus best wordpress backup plugin](./images/UpdraftPlus_Logo_Small.png)](https://updraftplus.com)
 
@@ -352,7 +351,7 @@ The free version of UpdraftPlus has all the features listed above. The premium v
 
 BlogVault is a better choice than UpdraftPlus. It is a premium plugin and comes with many advanced features. But if you want a free plugin then go for UpdraftPlus.
 
-# 6\. Best WordPress Plugins for Building Pages
+## 6\. Best WordPress Plugins for Building Pages
 
 Every website needs some pages and posts. Your website also needs it. But you need some coding knowledge to design a beautiful page.
 
@@ -360,7 +359,7 @@ But everyone wants to focus on growing their blog or business, not into learning
 
 WordPress comes with a default block editor named Gutenberg. It is good but not enough for serious people. However, you can extend its functionality by installing some add-ons. Or just install a great WordPress page builder plugin and create an amazing website.
 
-## [WPBakery (Visual Composer)](https://wpbakery.com)
+### [WPBakery (Visual Composer)](https://wpbakery.com)
 
 [![wp bakery best wordpress page builder plugin](./images/WPBakery-1-1-1024x841.jpg)](https://wpbakery.com)
 
@@ -387,9 +386,9 @@ WPBakery is one of the best WordPress plugins for building pages. It was previou
 
 WPBakery is robust with features. But comes with a price tag of just 45$ onetime fee. The price is very reasonable considering the features it comes with.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [Elementor](https://elementor.com)
+### [Elementor](https://elementor.com)
 
 [![elementor best wordpress page builder plugin](./images/elementor_logo_gradient-01.png)](https://elementor.com)
 
@@ -416,9 +415,9 @@ Elementor is the most popular WordPress page builder plugin. It has 5 million+ a
 
 The free version of Elementor is a very good choice for beginners. The premium version starts at 49$ for 1, 99$ for 3, and 199$ for unlimited site licenses. The premium version unlocks all the features that you need to make an awesome website in minutes without knowing code.
 
-## Another great Page-builder plugin
+### Another great Page-builder plugin
 
-## [SiteOrigin Site Builder](https://siteorigin.com/page-builder/)
+### [SiteOrigin Site Builder](https://siteorigin.com/page-builder/)
 
 [![siteorigin best wordpress page builder plugin](./images/Screenshot-132-1024x445.png)](https://siteorigin.com/page-builder/)
 
@@ -436,11 +435,11 @@ WPBakery and Elementor both are great premium drag-and-drop page builders. You c
 
 If you need a free plugin then go for Elementor or SiteOrigin. SiteOrigin has many free widgets. Elementor has a great free plugin and there are many free 3rd party extensions for Elementor that can add premium elements to it.
 
-# 7\. Best WordPress Plugins for Contact Forms
+## 7\. Best WordPress Plugins for Contact Forms
 
 You need some forms on your website for collecting leads. Such as a contact form, a newsletter form, etc. WordPress doesn't come with a default form builder. So, you'll need to create a form by coding or just install a form builder plugin.
 
-## [Fluent Forms](https://wpmanageninja.com/wp-fluent-form/)
+### [Fluent Forms](https://wpmanageninja.com/wp-fluent-form/)
 
 [![fluent forms best wordpress form builder plugin](./images/WP-FF-v3.0-prev-1024x482.png)](https://wpmanageninja.com/wp-fluent-form/)
 
@@ -472,9 +471,9 @@ The free plugin is enough for creating advanced forms. Free Mailchimp and Slack 
 
 You can get a 30% discount by applying the promo code 'FluentDeal' at checkout
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [WPForms](https://wpforms.com)
+### [WPForms](https://wpforms.com)
 
 [![wpforms best wordpress form builder plugin](./images/banner-1544x500-2-1024x335.png)](https://wpforms.com)
 
@@ -502,9 +501,9 @@ WPForms is the most popular and to many people the best WordPress plugin for con
 
 WPForms has a Lite version which is free. It can be used to create simple forms. To create advanced forms, you need to upgrade to a premium plan. The premium plans range from as low as 39$ to 299$ which unlocks all the features.
 
-## Another great plugin for contact forms
+### Another great plugin for contact forms
 
-## [Contact Form 7](//contactform7.com)
+### [Contact Form 7](//contactform7.com)
 
 [![contact form 7 best wordpress form builder plugin](./images/contact-form-7-logo@2x.png)](https://contactform7.com)
 
@@ -522,7 +521,7 @@ Fluent Forms also has a better free plugin more free input fields & integrations
 
 But if you want to collect payments or need Zapier integration then Fluent Forms don't have them, you need to buy WPForms.
 
-# 8\. Best WordPress Plugins for Social Sharing
+## 8\. Best WordPress Plugins for Social Sharing
 
 Social sharing is very important for driving traffic to your website. Billions of people spend their time on social media. So, it is a good platform to share your posts.
 
@@ -530,7 +529,7 @@ A social sharing plugin will help you add Facebook, Twitter, Pinterest, LinkedIn
 
 While adding social share buttons on your website, keep in mind that every button and image add weights. So, if you overuse, it can result in a slow page loading speed.
 
-## [Social Snap](https://socialsnap.com/)
+### [Social Snap](https://socialsnap.com/)
 
 [![social snap best social sharing wordpress plugin](./images/WPBakery-1-1-1-1024x831.jpg)](https://socialsnap.com/)
 
@@ -564,9 +563,9 @@ Social Snap has a free version available in the WordPress repository. The free i
 
 You can get a 10% discount by applying the promo code 'WPEXPLORER' at checkout.
 
-## Alternative Plugin
+### Alternative Plugin
 
-## [AddToAny](https://addtoany.com)
+### [AddToAny](https://addtoany.com)
 
 [![addtoany best social sharing wordpress plugin](./images/Screenshot-133.png)](https://addtoany.com)
 
@@ -600,7 +599,7 @@ Social Snap is full of features and has great icon designs. It's a great premium
 
 AddToAny has access to more social networks than Social Snap (96 social networks). It also can add a Universal share button that no other plugins can. It makes AddToAny one of the best WordPress plugins.
 
-## Here the list of 8 Best WordPress Plugins ends...
+### Here the list of 8 Best WordPress Plugins ends...
 
 Here ends the list of **8 Best WordPress Plugins**. I think you have installed only the top WordPress plugins. Don't forget to share your thoughts in the comments section.
 

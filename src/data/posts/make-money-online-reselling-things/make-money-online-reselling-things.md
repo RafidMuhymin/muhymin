@@ -3,6 +3,7 @@ title: 4 Things to Buy and Resell to Make Money Online
 slug: make-money-online-reselling-things
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/make-money-online-reselling-things.jpg
+tocDepth: 3
 ---
 
 According to Statista, [the global secondhand apparel market was estimated to be worth $28 billion in 2019](https://www.statista.com/statistics/826162/apparel-resale-market-value-worldwide/)! And it is estimated to exceed $60 billion by 2024!!! It's just 2% of the global apparel market but a high enough number to attract most people.
@@ -41,7 +42,7 @@ First, check [BookScouter](https://bookscouter.com/) to compare the buy-back dea
 
 But if a buy-back deal is currently not available, then the best option left is [eBay](https://www.ebay.com/). There are already thousands of buyers (or resellers like you) who are looking to buy used books. And, you'll also get a higher price at eBay.
 
-#### How Much Money Can You Make Online Reselling Old Books
+### How Much Money Can You Make Online Reselling Old Books
 
 You’ll have to buy a book at a low price to make a good profit. So, use BookScouter to check if a buy-back deal is available before you buy a used book. It'll help you to avoid any loss and let you know how much money you'll be able to earn.
 
@@ -49,7 +50,7 @@ If you make $10 per book and sell one book every day, you'll still be able to ea
 
 Book-reselling is a lucrative business. You'll be amazed to know that when Amazon was founded in 1995, it was an online bookstore!!! And, now the net worth of Amazon has crossed $1,500 bn!!!
 
-#### Essential Websites & Apps: [BookScouter](https://bookscouter.com/), [eBay](https://www.ebay.com/)
+### Essential Websites & Apps: [BookScouter](https://bookscouter.com/), [eBay](https://www.ebay.com/)
 
 ## 2\. Buy and Resell Used Phones
 
@@ -73,11 +74,11 @@ When you buy an old phone, make sure that it isn’t stolen. You certainly won�
 
 After you’ve done all the things required for selling a used phone at a high price, sell it on [eBay](https://www.ebay.com/) or [Craigslist](https://www.craigslist.org/). Craigslist might be a more lucrative option as it doesn’t charge a fee, and every penny is important.
 
-#### How Much Money Can You Make Online Reselling Used Phones
+### How Much Money Can You Make Online Reselling Used Phones
 
 There are no exact numbers I can say. If you gain $50 profit per phone, then you can easily make $350/week or $1,500/mo reselling one phone a day. And, you can grow your business once you’ve accumulated capital.
 
-#### Essential Websites & Apps: [CheckMEND](https://www.checkmend.com/), [eBay](https://www.ebay.com/), [Craigslist](https://www.craigslist.org/), [Facebook Marketplace](https://www.facebook.com/marketplace/)
+### Essential Websites & Apps: [CheckMEND](https://www.checkmend.com/), [eBay](https://www.ebay.com/), [Craigslist](https://www.craigslist.org/), [Facebook Marketplace](https://www.facebook.com/marketplace/)
 
 ## 3\. Buy and Resell Domain Names
 
@@ -113,7 +114,7 @@ You can also search for the domain names that are going to be expired soon or ha
 
 If you’ve bought a or a few domain names, now you’ve to list them in a marketplace for sale. SEDO and Flippa are two of the best websites for selling a premium domain name. GoDaddy is another great place if you want to sell the domain names at an auction.
 
-#### How Much Money Can You Make Online Reselling Domain Names
+### How Much Money Can You Make Online Reselling Domain Names
 
 If you want to sell a domain name quickly, then you can get $40-$4K or even more per domain! It varies by domain names.
 
@@ -121,7 +122,7 @@ If you want to sell the domain names at a higher price, you may need to hold the
 
 If you go for the quicker process, and sell 100 domains per month, and get $50 per domain on average, then you’ll earn $5K a month! And if you buy the domain names from other flippers at $40, you’ll still earn $1K. And you’ll definitely make more than this if you can sell 100 domains a month. As you’ll get over $50, or even $100 for at least some domain names.
 
-#### Essential Websites & Apps: [Flippa](https://flippa.com/), [SEDO](https://sedo.com/us/), [Empire Flippers](https://empireflippers.com/), [Whois](https://www.whois.com/), [Porkbun](https://porkbun.com/), [GoDaddy](https://www.godaddy.com/), [NameCheap](https://www.namecheap.com/), [Expired Domains](https://www.expireddomains.net/), [Just Dropped](https://www.justdropped.com/)
+### Essential Websites & Apps: [Flippa](https://flippa.com/), [SEDO](https://sedo.com/us/), [Empire Flippers](https://empireflippers.com/), [Whois](https://www.whois.com/), [Porkbun](https://porkbun.com/), [GoDaddy](https://www.godaddy.com/), [NameCheap](https://www.namecheap.com/), [Expired Domains](https://www.expireddomains.net/), [Just Dropped](https://www.justdropped.com/)
 
 ## 4\. Buy and Resell Stocks Online
 
@@ -141,13 +142,13 @@ To make a profit in the share market, you need to buy low and sell high. So, kee
 
 The key to success in the stock market is patience. Buy only good stocks, and keep them for a long time before selling. Maybe day-trading is lucrative for a short time. Yet significant risk is involved. Even you can lose all your money in greed.
 
-#### How Much Money Can You Make Online Reselling Stocks
+### How Much Money Can You Make Online Reselling Stocks
 
 If done right, you can expect to get at least 9%-10% yearly returns. And successful day-traders can get even 17%-18% monthly returns!
 
 But there are high risks involved in the share market. Don’t greed. Play safe. Otherwise, you may lose all your money and can even go bankrupt.
 
-#### Essential Websites & Apps: [TD Ameritrade](https://www.tdameritrade.com/home.page), [Fidelity](https://www.fidelity.com/), [Ally](https://www.ally.com/)
+### Essential Websites & Apps: [TD Ameritrade](https://www.tdameritrade.com/home.page), [Fidelity](https://www.fidelity.com/), [Ally](https://www.ally.com/)
 
 ## Wait for More Ways to Make Money Online Reselling Things
 

@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               slug
+              tocDepth
             }
           }
           previous {
@@ -30,13 +31,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const { edges } = data.allMdx;
 
   edges.forEach(({ node, previous, next }) => {
-    const { slug } = node.frontmatter;
+    const { slug, tocDepth } = node.frontmatter;
     actions.createPage({
       path: "/" + slug,
       component: path.resolve(
         "./src/components/Templates/PostTemplate/PostTemplate.js"
       ),
-      context: { slug, previous, next },
+      context: { slug, tocDepth, previous, next },
     });
   });
 

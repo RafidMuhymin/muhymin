@@ -3,6 +3,7 @@ title: 4 Excellent Ways How to Make Money Online Renting Out Things
 slug: make-money-online-renting-out-things
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/make-money-online-renting-out-things.png
+tocDepth: 3
 ---
 
 The sharing economy is getting bigger day by day. And it shows no sign to stop. [It is predicted to grow past $300 billion by 2025 from only $15 billion in 2014](https://www.statista.com/statistics/830986/value-of-the-global-sharing-economy/)!!!

@@ -3,6 +3,7 @@ title: 85 Excellent Ways How to Earn Money Online
 slug: make-money-online
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/make-money-online.png
+tocDepth: 5
 ---
 
 The internet is growing big rapidly since its creation. Terabytes of data are being processed every second on the internet! Now, the estimated total size of the internet has exceeded one yottabyte (1,000 trillion gigabytes)!!!

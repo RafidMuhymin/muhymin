@@ -3,6 +3,7 @@ title: 16 Ways How to Make Free Money Online in 2020
 slug: make-free-money-online
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/make-free-money-online.png
+tocDepth: 3
 ---
 
 The world has completely changed after the invention of the internet. Now people are all-time online. We can't think of a single moment without it.

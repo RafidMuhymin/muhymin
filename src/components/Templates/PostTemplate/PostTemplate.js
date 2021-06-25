@@ -19,10 +19,12 @@ export default function PostTemplate({ data, pageContext }) {
   const fm = md.frontmatter;
   const sm = data.site.siteMetadata;
 
-  const markdown = md.body;
+  const { body: markdown, tableOfContents, timeToRead: readingTime } = md;
   const desc = fm.description || md.excerpt;
-  const title = fm.title;
-  const date = new Date(fm.date).toDateString();
+  const { title, date: publishedTime, mDate } = fm;
+
+  const modifiedTime = mDate ? mDate : publishedTime;
+  console.log(tableOfContents);
 
   const author = fm.author?.id || sm.author.name;
   const authorFb = fm.author?.fb || sm.social.fb;
@@ -35,13 +37,8 @@ export default function PostTemplate({ data, pageContext }) {
   const fImgData = fm.featuredImg.childImageSharp.gatsbyImageData;
   const imageExt = fm.featuredImg.extension;
   const ogImage = sm.siteUrl + fm.featuredImg.publicURL;
-  const imageWidth = fImgData.width;
-  const imageHeight = fImgData.height;
+  const { width: imageWidth, height: imageHeight } = fImgData;
   const imageType = `image/` + imageExt;
-
-  const readingTime = md.timeToRead;
-  const publishedTime = md.parent.birthTime;
-  const modifiedTime = md.parent.mtime;
   return (
     <Layout
       description={desc}
@@ -102,7 +99,8 @@ export default function PostTemplate({ data, pageContext }) {
           <main className="p-3">
             <h1>{title}</h1>
             <p className="fs-6 text-secondary">
-              By {author} • Last Updated On {date}
+              {readingTime} min read • By {author} • Last Updated On{" "}
+              {new Date(publishedTime).toDateString()}
             </p>
             <MDXRenderer>{markdown}</MDXRenderer>
             <LazyLoad>
@@ -157,7 +155,7 @@ export default function PostTemplate({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query post($slug: String) {
+  query post($slug: String, $tocDepth: Int) {
     site {
       siteMetadata {
         author {
@@ -175,13 +173,7 @@ export const query = graphql`
       body
       excerpt
       timeToRead
-      tableOfContents
-      parent {
-        ... on File {
-          birthTime
-          mtime
-        }
-      }
+      tableOfContents(maxDepth: $tocDepth)
       frontmatter {
         title
         date

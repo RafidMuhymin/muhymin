@@ -3,6 +3,7 @@ title: 20 Best Ways How to Make Money Online Selling Things
 slug: make-money-online-selling-things
 date: 2021-04-01T00:00:00+06:00
 featuredImg: ../../images/featured/make-money-online-selling-things.png
+tocDepth: 3
 ---
 
 These days, when the world is online-centric, people are increasingly looking for new ways to make money online. According to Statista, [_in 2019, retail e-commerce sales worldwide amounted to $3.53 trillion, and e-retail revenues are projected to grow to $6.54 trillion in 2023_](https://www.statista.com/statistics/379046/worldwide-retail-e-commerce-sales/)!!!
@@ -19,7 +20,7 @@ I have also added links to essential websites you may need. Don't forget to shar
 
 Let's jump into the topic without talking further.
 
-### 1\. Sell Old Books Online
+## 1\. Sell Old Books Online
 
 ![](./images/word-image-15.jpeg)
 
@@ -37,13 +38,13 @@ You can sell your books locally. [Craigslist](https://www.craigslist.org/) or [F
 
 [Amazon](https://www.amazon.com/) also has a Trade-in program for old books. It doesn’t buy every book. But if you’re lucky, you can expect to get up to 80% of the price you purchased your book for!
 
-#### How Much Money Can You Make Online Selling Your Old Books
+### How Much Money Can You Make Online Selling Your Old Books
 
 You'll not get the price you bought the book for. People buy used books only for the reason that they are cheap. Still, you can get a maximum of 80% of the retail price or something like that.
 
-#### Essential Websites & Apps: [BookScouter](https://bookscouter.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Amazon](https://www.amazon.com/)
+### Essential Websites & Apps: [BookScouter](https://bookscouter.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Amazon](https://www.amazon.com/)
 
-### 2\. Sell Old Clothes Online
+## 2\. Sell Old Clothes Online
 
 ![](./images/word-image-16.jpeg)
 
@@ -62,15 +63,15 @@ But if you have high-end clothes, then [eBay](https://www.ebay.com/) is best for
 
 You can also sell your clothes locally on [Facebook Marketplace](https://www.facebook.com/marketplace/) or [Craigslist](https://www.craigslist.org/). You’ll get to keep the full profit you make. Because it doesn't charge a commission over your products.
 
-#### How Much Money Can You Make Online Selling Old Clothes
+### How Much Money Can You Make Online Selling Old Clothes
 
 How much money you’ll earn depends mainly on the condition of your clothes. It also depends on what type of, where, and how many clothes you’re selling, etc.
 
 You can get from a few dollars to a few hundred dollars for your clothes. Some successful cloth reselling businesses earn more than $300,000 per year!
 
-#### Essential Websites & Apps: [Depop](https://www.depop.com/), [Poshmark](https://poshmark.com/), [ThredUp](https://www.thredup.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Instagram](https://www.instagram.com/), [Vintage](https://evintage.io/)
+### Essential Websites & Apps: [Depop](https://www.depop.com/), [Poshmark](https://poshmark.com/), [ThredUp](https://www.thredup.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Instagram](https://www.instagram.com/), [Vintage](https://evintage.io/)
 
-### 3\. Sell Used Phones Online
+## 3\. Sell Used Phones Online
 
 ![](./images/word-image-17.jpeg)
 
@@ -84,13 +85,13 @@ Or, if you want to get some more cash, you can list your phone on [eBay](https:/
 
 **Note:** Don't try to hide any defect your phone has. You can get engaged in a dilemma or lose money instead of making money.
 
-#### How Much Money Can You Make Online Selling Used Phones
+### How Much Money Can You Make Online Selling Used Phones
 
 It varies from phone to phone. There are no exact numbers. If you have a damn old phone or a phone from a less-known brand, you can’t expect to get a high price. For most used phones, if they have no defects, you can generally get 60-70% of the retail price.
 
-#### Essential Websites & Apps: [Gazelle](https://www.gazelle.com/), [eBay](https://www.ebay.com/), [Craigslist](https://www.craigslist.org/) [Amazon](https://www.amazon.com/), [NextWorth](https://www.nextworth.com/), [BuyBackBoss](https://buybackboss.com/), [Decluttr](https://www.decluttr.com/)
+### Essential Websites & Apps: [Gazelle](https://www.gazelle.com/), [eBay](https://www.ebay.com/), [Craigslist](https://www.craigslist.org/) [Amazon](https://www.amazon.com/), [NextWorth](https://www.nextworth.com/), [BuyBackBoss](https://buybackboss.com/), [Decluttr](https://www.decluttr.com/)
 
-### 4\. Sell Old Electronic Devices Online
+## 4\. Sell Old Electronic Devices Online
 
 ![](./images/word-image-18.jpeg)
 
@@ -104,13 +105,13 @@ But those companies don’t offer you the highest price. And also, they don’t 
 
 Or, you can also sell your devices on [eBay](https://www.ebay.com/). Often, you’ll get the best price on eBay. And if something like a reselling business is in your mind, then eBay might be the best fit for you.
 
-#### How Much Money Can You Make Online Selling Old Electronic Devices
+### How Much Money Can You Make Online Selling Old Electronic Devices
 
 If your devices are in good condition and not too old, you can expect to get around 60-70% of the retail price for your device.
 
-#### Essential Websites & Apps: [Gazelle](https://www.gazelle.com/), [NextWorth](https://www.nextworth.com/), [BuyBackBoss](https://buybackboss.com/), [Decluttr](https://www.decluttr.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/)
+### Essential Websites & Apps: [Gazelle](https://www.gazelle.com/), [NextWorth](https://www.nextworth.com/), [BuyBackBoss](https://buybackboss.com/), [Decluttr](https://www.decluttr.com/), [eBay](https://www.ebay.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/)
 
-### 5\. Sell Ad Space on Your Car
+## 5\. Sell Ad Space on Your Car
 
 ![](./images/word-image-19.jpeg)
 
@@ -120,13 +121,13 @@ Anyone can't sell ad space on their cars. There are several requirements to be e
 
 [Wrapify](https://wrapify.com/) and [Carvertise](https://carvertise.com/) are two excellent websites to find advertisers for your car. You can also contact a local advertising agency for ads.
 
-#### How Much Money Can You Make Online Selling Ad Space on Your Car
+### How Much Money Can You Make Online Selling Ad Space on Your Car
 
 How much money you'll get varies on different factors. Such as how much time you spend driving, where you live, which roads you drive in, etc. But still, you can earn at least $100 to as high as $500 a month. So, it can be a good source of passive income.
 
-#### Essential Websites & Apps: [Wrapify](https://wrapify.com/), [Carvertise](https://carvertise.com/), [Nickelytics](https://www.nickelytics.com/), [StickerRide](https://stickerride.com/), [Adverttu](https://www.adverttu.com/), [Car Quids](https://www.carquids.com/)
+### Essential Websites & Apps: [Wrapify](https://wrapify.com/), [Carvertise](https://carvertise.com/), [Nickelytics](https://www.nickelytics.com/), [StickerRide](https://stickerride.com/), [Adverttu](https://www.adverttu.com/), [Car Quids](https://www.carquids.com/)
 
-### 6\. Sell Websites
+## 6\. Sell Websites
 
 ![](./images/word-image-20.jpeg)
 
@@ -146,15 +147,15 @@ Or, you can post some content on your site. Do proper keyword research and build
 
 You’ll have to wait for a few days to up to a month to sell a website. You may need to hire a broker also to sell a website. He may take 20% of the sold price as his fee.
 
-#### How Much Money Can You Make Online Selling Websites
+### How Much Money Can You Make Online Selling Websites
 
 Starter websites are great for making a decent amount of money quickly. It just takes a few hours to build a good-looking website. Probably, you'll be able to create 30, 50, or more sites in a month. And, if you can sell only 5 websites a month, you’ll still earn $5,000!!
 
 But established sites are much more profitable if you can work hard. If a website Is making $3,000/mo, then you can get anywhere between $45K-$108K selling the website!!! That’s still a hefty $30K-$80K after all the expenses!!!
 
-#### Essential Websites & Apps: [Flippa](https://flippa.com/), [EmpireFlippers](https://empireflippers.com/)
+### Essential Websites & Apps: [Flippa](https://flippa.com/), [EmpireFlippers](https://empireflippers.com/)
 
-### 7\. Sell Stock Photographs
+## 7\. Sell Stock Photographs
 
 ![](./images/word-image-21.jpeg)
 
@@ -180,7 +181,7 @@ There are many websites to publish your photos and videos. But the problem is, y
 
 You can also start your own website to show your works, and if someone finds that your photos are great, they can license those paying a fee. You’ll also get the full amount to keep.
 
-#### How Much Money Can You Make Online Selling Stock Photographs
+### How Much Money Can You Make Online Selling Stock Photographs
 
 How much money you'll earn depends mainly on three factors. Such as how much you're getting per photo, how many downloads you get, and the commission rates.
 
@@ -190,9 +191,9 @@ It means that you’ll earn more if you get a higher commission and more downloa
 
 If your photos get more than a million downloads per month, you can expect to earn even $600,000 up to $2.4M a month!!! And, if you’re selling your photos on your website, then that’s even more, $4M!!!!
 
-#### Essential Websites & Apps: [Google Trends](https://trends.google.com/trends/), [Pond5](https://www.pond5.com/), [500px](https://500px.com/), [Adobe Stock](https://stock.adobe.com/), [ShutterStock](https://www.shutterstock.com/), [iStock](https://www.istockphoto.com/)
+### Essential Websites & Apps: [Google Trends](https://trends.google.com/trends/), [Pond5](https://www.pond5.com/), [500px](https://500px.com/), [Adobe Stock](https://stock.adobe.com/), [ShutterStock](https://www.shutterstock.com/), [iStock](https://www.istockphoto.com/)
 
-### 8\. Sell Junk Mails
+## 8\. Sell Junk Mails
 
 ![](./images/word-image-2.png)
 
@@ -206,15 +207,15 @@ SBKC members are called Panelist. General panelists are called Consumer Panelist
 
 You'll receive a prepaid envelope every month from SBKC. You need to put your junk mails in it and send it to them. But you can send your junk emails anytime. You just have to forward them to SBKC.
 
-#### How Much Money Can You Make Online Selling Junk Mails
+### How Much Money Can You Make Online Selling Junk Mails
 
 You'll earn points for every junk mail. When you'll have accumulated 2000 points, you'll be able to withdraw a $20 gift card. It isn't much, but it can be a good source of passive income if you receive a lot of junk mails every month.
 
 It can take 6-10 weeks to get a $20 gift card, but if you have a business, you may just need around a week or less.
 
-#### Essential Websites & Apps: [SBKC](https://www.sbkcenter.com/)
+### Essential Websites & Apps: [SBKC](https://www.sbkcenter.com/)
 
-### 9\. Sell Your Knowledge
+## 9\. Sell Your Knowledge
 
 ![](./images/word-image-22.jpeg)
 
@@ -234,15 +235,15 @@ Though freelancing platforms, in this case, aren’t the best choices, they’re
 
 **Note:** As a consultant, provide only the actionable advice you know will work. You’ll also need to outsource any work you aren’t an expert at. Because if you fail in any one of the two cases, it can be a big turndown for your business.
 
-#### How Much Money Can You Make Online Selling Your Knowledge
+### How Much Money Can You Make Online Selling Your Knowledge
 
 How much you’ll earn as a consultant depends on your depth of knowledge, niche, specialty, etc. If you charge your clients $500 per month and work with five clients every month, then you’ll earn $30K/yr.
 
 So, if you charge more, you’ll earn more. Many consultants charge $2,500 or more per month per client. Again, some consultants demand even more than $1K/hr per client!!!
 
-#### Essential Websites & Apps: Your Own Blog, [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/)
+### Essential Websites & Apps: Your Own Blog, [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/)
 
-### 10\. Sell Your Private Data
+## 10\. Sell Your Private Data
 
 ![](./images/word-image-23.jpeg)
 
@@ -260,13 +261,13 @@ If you think $50/yr is less, then the [Screenwise Panel](https://screenwisepanel
 
 Some other great apps like these are [DataWallet](https://www.datawallet.com/datawallet-3/) ($1-$50 every 2 months), [Placed Panel](https://getpanelapp.com/) (around $50/yr.), [Smart Panel](https://smartapp.io/) ($110/yr.).
 
-#### How Much Money Can You Make Online Selling Your Private Data
+### How Much Money Can You Make Online Selling Your Private Data
 
 Selling usage data is an excellent way to make money online selling things. You'll not get rich by installing these apps. But you'll get something rather than getting nothing. And it's also not a bad deal. If I add all of the earnings from these 6 apps, then you can earn up to $1,000 a year! And whatever you get is free! Also, there are more apps like these!! Just do some searches on Google.
 
-#### Essential Apps & Websites: [Screenwise Panel](https://screenwisepanel.com/member/Index.aspx?lang=0), [Smart Panel](https://smartapp.io/), [Nielsen Panel](https://computermobilepanel.nielsen.com/ui/US/en/sdp/landing), [Placed Panel](https://getpanelapp.com/), [DataWallet](https://www.datawallet.com/datawallet-3/)
+### Essential Apps & Websites: [Screenwise Panel](https://screenwisepanel.com/member/Index.aspx?lang=0), [Smart Panel](https://smartapp.io/), [Nielsen Panel](https://computermobilepanel.nielsen.com/ui/US/en/sdp/landing), [Placed Panel](https://getpanelapp.com/), [DataWallet](https://www.datawallet.com/datawallet-3/)
 
-### 11\. Sell Your Opinion
+## 11\. Sell Your Opinion
 
 ![](./images/word-image-3.png)
 
@@ -276,13 +277,13 @@ You can get around $1 per survey. Some survey sites like [Pinecone Research](htt
 
 Every survey site or panel has a limited number of surveys available for each member per month. So, you have to sign up to as many survey sites as possible to make a decent amount of money from paid surveys.
 
-#### How Much Money Can You Make Online Selling Your Opinion
+### How Much Money Can You Make Online Selling Your Opinion
 
 It just takes a few minutes to complete a form. So, you'll be able to participate in 5, 10, or even more surveys an hour. That's an easy $10-$20 an hour doing some fun works!
 
-#### Essential Websites & Apps: [SurveyJunkie](https://www.surveyjunkie.com/), [Swagbucks](https://www.swagbucks.com/) ($5 sign-up bonus), [InboxDollars](https://www.inboxdollars.com/) ($5 sign-up bonus), [LifePoints](https://www.lifepointspanel.com/), [Pinecone Research](https://www.pineconeresearch.com/), [Vindale Research](https://www.vindale.com/), [OnePoll](https://www.onepoll.com/panel/)
+### Essential Websites & Apps: [SurveyJunkie](https://www.surveyjunkie.com/), [Swagbucks](https://www.swagbucks.com/) ($5 sign-up bonus), [InboxDollars](https://www.inboxdollars.com/) ($5 sign-up bonus), [LifePoints](https://www.lifepointspanel.com/), [Pinecone Research](https://www.pineconeresearch.com/), [Vindale Research](https://www.vindale.com/), [OnePoll](https://www.onepoll.com/panel/)
 
-### 12\. Sell Handmade Crafts
+## 12\. Sell Handmade Crafts
 
 ![](./images/word-image-24.jpeg)
 
@@ -294,13 +295,13 @@ You can also set up your store via [Shopify](https://www.shopify.com/). It is a 
 
 After you’re have done the technical things, now is the time to build crafts. If you want some ideas about what you should craft and sell, you can check out this post on [_87 Crafts You Can Make and Sell_](https://twinsmommy.com/crafts-that-make-money/) from Elna Cain.
 
-#### How Much Money Can You Make Online Selling Handmade Crafts
+### How Much Money Can You Make Online Selling Handmade Crafts
 
 Building a successful craft business takes time. You’ll not become a millionaire overnight by selling crafts. You need to be a passionate crafter, and your passion will drive you to success. And once you’ve earned success, you can earn even more than $50K per month!
 
-#### Essential Websites & Apps: [Etsy](https://www.etsy.com/), [Shopify](https://www.shopify.com/), [WooCommerce](https://woocommerce.com/)
+### Essential Websites & Apps: [Etsy](https://www.etsy.com/), [Shopify](https://www.shopify.com/), [WooCommerce](https://woocommerce.com/)
 
-### 13\. Repackage Your Blog Posts and Sell Them
+## 13\. Repackage Your Blog Posts and Sell Them
 
 ![](./images/word-image-25.jpeg)
 
@@ -310,7 +311,7 @@ Ebooks have gained so much popularity that it has occupied 20% of the entire boo
 
 Writing and publishing an ebook has become easier than ever before. Because of the self-publishing platforms, anyone can now self-publish their own books online. So, the royalties are much higher than paperbacks.
 
-#### How to Make Money Online Writing an Ebook
+### How to Make Money Online Writing an Ebook
 
 If you want to write an ebook, a niche is crucial. Because if you’re writing your first ebook, perhaps no one will buy it. As there are books from many established writers.
 
@@ -326,7 +327,7 @@ But you should try to make as many sales as possible on your own. Because you ca
 
 You should spend enough time marketing your ebook. You can use your blog, social media followers, and contact famous authors, your friends, and your family.
 
-#### How Much Money Can You Make Online Selling Your Blog Posts
+### How Much Money Can You Make Online Selling Your Blog Posts
 
 The highest-earning author in 2019, J.K. Rowling, the author of the famous title Harry Potters, earned an astounding $92 million in 2019!!
 
@@ -334,9 +335,9 @@ Not everyone makes millions of dollars writing ebooks. But you can easily earn a
 
 You can know how much you can earn writing ebooks by doing simple math. If the price of your book is $5, and it sells 1000 copies every month, you’ll make $2,500 from just one ebook, even after cutting 50% as a commission. And considering you’ll write multiple books, it can be a great source of passive income.
 
-#### Essential Websites & Apps: [Amazon Kindle](https://kdp.amazon.com/), [Nook](https://press.barnesandnoble.com/), [Apple Books](https://authors.apple.com/), [Kobo](https://www.kobo.com/us/en/p/writinglife)
+### Essential Websites & Apps: [Amazon Kindle](https://kdp.amazon.com/), [Nook](https://press.barnesandnoble.com/), [Apple Books](https://authors.apple.com/), [Kobo](https://www.kobo.com/us/en/p/writinglife)
 
-### 14\. Sell Your Notes Online
+## 14\. Sell Your Notes Online
 
 ![](./images/word-image-26.jpeg)
 
@@ -358,13 +359,13 @@ There are many marketplaces for selling notes. But not all of them have a high c
 
 [Stuvia](https://www.stuvia.com/), [GradeBuddy](https://gradebuddy.com/), [Nexus Notes](https://nexusnotes.com/), [CourseHero](https://www.coursehero.com/) are also some great websites to sell your notes. Check out each website to find which best fits you.
 
-#### How Much Money Can You Make Online Selling Notes
+### How Much Money Can You Make Online Selling Notes
 
 On average, you can expect to get around $20-$30 per note. But you can get more than that. You can even earn $50-$75 or more for a comprehensive study guide. So, if you have 100 notes, and only one copy of each of them sells every month, then you'll earn a decent passive income of $2,000-$7,500 per month!!! And, if the website cuts 50% of your earnings as a fee, you'll still earn $1K-$3.75K/mo.!!!
 
-#### Essential Websites & Apps: [Stuvia](https://www.stuvia.com/), [GradeBuddy](https://gradebuddy.com/), [Nexus Notes](https://nexusnotes.com/), [CourseHero](https://www.coursehero.com/), [Notesgen](https://www.notesgen.com/), [NotesMate](https://www.notesmate.in/), [StudySoup](https://studysoup.com/), [Omega Notes](https://www.omeganotes.com/), [Oxbridge Notes](https://www.oxbridgenotes.co.uk/), [OneClass](https://oneclass.com/)
+### Essential Websites & Apps: [Stuvia](https://www.stuvia.com/), [GradeBuddy](https://gradebuddy.com/), [Nexus Notes](https://nexusnotes.com/), [CourseHero](https://www.coursehero.com/), [Notesgen](https://www.notesgen.com/), [NotesMate](https://www.notesmate.in/), [StudySoup](https://studysoup.com/), [Omega Notes](https://www.omeganotes.com/), [Oxbridge Notes](https://www.oxbridgenotes.co.uk/), [OneClass](https://oneclass.com/)
 
-### 15\. Sell Your Articles
+## 15\. Sell Your Articles
 
 ![](./images/word-image-27.jpeg)
 
@@ -382,13 +383,13 @@ There are many other ways to earn money online writing. The best way is to start
 
 Or, you can write an ebook and sell it on [Amazon Kindle](https://kdp.amazon.com/), [Nook](https://press.barnesandnoble.com/), [Apple Books](https://authors.apple.com/), etc. Some authors are earning even eight-figures writing ebooks!!!
 
-#### How Much Money Can You Make Online Selling Articles
+### How Much Money Can You Make Online Selling Articles
 
 If you’re a freelance writer, you can earn anywhere between $2K-$6K per month. If you have a blog and sell ebooks, you may make a few more thousands of dollars per month.
 
-#### Essential Websites & Apps: [Contena](https://www.contena.co/), [ProBlogger](https://problogger.com/jobs/), [Blogging Pro](https://www.bloggingpro.com/jobs/), [Freelancer.com](https://www.freelancer.com/), [Amazon Kindle](https://kdp.amazon.com/), [Nook](https://press.barnesandnoble.com/), [Apple Books](https://authors.apple.com/), [Kobo](https://www.kobo.com/us/en/p/writinglife)
+### Essential Websites & Apps: [Contena](https://www.contena.co/), [ProBlogger](https://problogger.com/jobs/), [Blogging Pro](https://www.bloggingpro.com/jobs/), [Freelancer.com](https://www.freelancer.com/), [Amazon Kindle](https://kdp.amazon.com/), [Nook](https://press.barnesandnoble.com/), [Apple Books](https://authors.apple.com/), [Kobo](https://www.kobo.com/us/en/p/writinglife)
 
-### 16\. Sell Your Recipes
+## 16\. Sell Your Recipes
 
 ![](./images/word-image-28.jpeg)
 
@@ -406,15 +407,15 @@ Starting a [YouTube](https://www.youtube.com/) channel is another excellent ch
 
 You can also build and sell a cooking course. If you already have a lot of YT videos and blog posts, it’ll be easy for you. [Kajabi](https://kajabi.com/) and [Udemy](https://www.udemy.com/) are two of the best places to sell a course.
 
-#### How Much Money Can You Make Online Selling Recipes
+### How Much Money Can You Make Online Selling Recipes
 
 You can get $5 to $500 or even more for a single recipe! Magazines pay well for a recipe. At Fiverr, you may be able to get around $25 per recipe.
 
 If you can succeed as a blogger or vlogger, you’ll be able to make thousands of dollars every month! And if you can create an excellent course on cooking, you can earn even a six-figure income!!!
 
-#### Essential Websites & Apps: [Taste of Home](https://www.tasteofhome.com/help/submit-a-recipe/), [Cuisine at Home](https://www.cuisineathome.com/tips/submit/), [Cooking Light](https://cookinglight.com/food/top-rated-recipes/send-us-your-recipes), [EatingWell](https://www.eatingwell.com/article/290691/writers-guidelines/), [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Bluehost](https://www.bluehost.com/), [YouTube](https://www.youtube.com/), [Kajabi](https://kajabi.com/), [Udemy](https://www.udemy.com/)
+### Essential Websites & Apps: [Taste of Home](https://www.tasteofhome.com/help/submit-a-recipe/), [Cuisine at Home](https://www.cuisineathome.com/tips/submit/), [Cooking Light](https://cookinglight.com/food/top-rated-recipes/send-us-your-recipes), [EatingWell](https://www.eatingwell.com/article/290691/writers-guidelines/), [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/), [Facebook Marketplace](https://www.facebook.com/marketplace/), [Craigslist](https://www.craigslist.org/), [Bluehost](https://www.bluehost.com/), [YouTube](https://www.youtube.com/), [Kajabi](https://kajabi.com/), [Udemy](https://www.udemy.com/)
 
-### 17\. Sell Your Working Skills
+## 17\. Sell Your Working Skills
 
 ![](./images/word-image-29.jpeg)
 
@@ -426,15 +427,15 @@ You’ll work as a tasker at TaskRabbit. And people will hire you to get their w
 
 You’ll have to list what services you can offer and how much your hourly rate is for each task. You’ll get paid by clients using the TaskRabbit app. TaskRabbit will cut 15% of your earnings as a fee.
 
-#### How Much Money Can You Make Online at TaskRabbit Selling Your Working Skills
+### How Much Money Can You Make Online at TaskRabbit Selling Your Working Skills
 
 It’s up to what you charge per hour. If you charge $30/hr, you can take home $25.5 after cutting the 15% fee. And, many people are charging $60 or even more per hour for complicated tasks. But you’ve to gain experience and get good reviews before charging a high hourly rate.
 
 Customers may also reimburse or tip a tasker. TaskRabbit won’t charge a fee on any tip or reimbursements made. A tasker can keep 100% of these.
 
-#### Essential Websites & Apps: [TaskRabbit](https://www.taskrabbit.com/become-a-tasker)
+### Essential Websites & Apps: [TaskRabbit](https://www.taskrabbit.com/become-a-tasker)
 
-### 18\. Sell Your Freelancing Services
+## 18\. Sell Your Freelancing Services
 
 ![](./images/word-image-30.jpeg)
 
@@ -456,15 +457,15 @@ And even if a freelancing platform doesn’t have fees for a freelancer, it’ll
 
 So, once you’ve gained some experience, you should start receiving clients directly through your blog or cold-emailing. Or, you should focus on the category-based platforms. Social Media is also a great place to collect potential clients.
 
-#### How Much Money Can You Make Online Selling Your Freelancing Services
+### How Much Money Can You Make Online Selling Your Freelancing Services
 
 You’ll not earn much as a new freelancer. Perhaps, you’ll get paid only $10 an hour. But you’ll become skilled and gain a reputation progressively. Then you can certainly charge much more than $10.
 
 Some successful freelancers charge up to $250/hr or even more. It translates into an annual salary of a whopping $500,000!!!
 
-#### Essential Websites & Apps: [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/), [PeoplePerHour](https://www.peopleperhour.com/), [Guru](https://www.guru.com/), [Toptal](https://www.toptal.com/), [FlexJobs](https://www.flexjobs.com/), [SolidGigs](https://solidgigs.com/), [Contena](https://www.contena.co/), [Gun.io](https://www.gun.io/), [Gigster](https://gigster.com/), [99designs](https://99designs.com/), [ZipRecruiter](https://www.ziprecruiter.com/), [Behance](https://www.behance.net/), [The Creative Loft](https://photography.thecreativeloft.com/), [**Creative** Jobs Central](https://www.creativejobscentral.com/photography-jobs), [BELAY](https://belaysolutions.com/)
+### Essential Websites & Apps: [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/), [PeoplePerHour](https://www.peopleperhour.com/), [Guru](https://www.guru.com/), [Toptal](https://www.toptal.com/), [FlexJobs](https://www.flexjobs.com/), [SolidGigs](https://solidgigs.com/), [Contena](https://www.contena.co/), [Gun.io](https://www.gun.io/), [Gigster](https://gigster.com/), [99designs](https://99designs.com/), [ZipRecruiter](https://www.ziprecruiter.com/), [Behance](https://www.behance.net/), [The Creative Loft](https://photography.thecreativeloft.com/), [**Creative** Jobs Central](https://www.creativejobscentral.com/photography-jobs), [BELAY](https://belaysolutions.com/)
 
-### 19\. Sell Your English Skills
+## 19\. Sell Your English Skills
 
 ![](./images/word-image-31.jpeg)
 
@@ -476,13 +477,13 @@ There are many websites to teach English online. Some are exclusive to English, 
 
 You can set your own hourly rates when you’re teaching English online. The websites will only charge you a commission. And they make sure that you get paid. Students will pre-pay you, and you’ll receive the money before or right after the lesson.
 
-#### How Much Money Can You Make Online Selling Your English Skills
+### How Much Money Can You Make Online Selling Your English Skills
 
 An English tutor may get around $15-$25 per hour, plus bonuses (if available). But an experienced tutor with a degree can earn 2X or even more than that. But without TEFL, you can expect to get around $10-$12 per hour.
 
-#### Essential Websites & Apps: [VIPKid](https://www.vipkid.com/), [English First](https://www.englishfirst.com/), [italki](https://www.italki.com/?hl=en), [Verbling](https://www.verbling.com/), [PalFish](https://www.onlineenglishteaching.com/palfish), [Tandem](https://www.tandem.net/)
+### Essential Websites & Apps: [VIPKid](https://www.vipkid.com/), [English First](https://www.englishfirst.com/), [italki](https://www.italki.com/?hl=en), [Verbling](https://www.verbling.com/), [PalFish](https://www.onlineenglishteaching.com/palfish), [Tandem](https://www.tandem.net/)
 
-### 20\. Sell Your Language Skills
+## 20\. Sell Your Language Skills
 
 ![](./images/word-image-4.png)
 
@@ -498,11 +499,11 @@ If you find that you can’t teach your language on any one of those websites, y
 
 [Italki](https://www.italki.com/?hl=en) is the largest online language teaching platform with 10,000+ teachers from more than 130 countries and more than 5 million users. It has a fair commission rate also. Italki charges only a 15% commission on lesson fees. Two other excellent alternatives to Italki are Verbling and Tandem.
 
-#### How Much Money Can You Make Online Selling Your Language Skills
+### How Much Money Can You Make Online Selling Your Language Skills
 
 It depends on what language you are teaching and your students' country. But still, you’ll be able to earn around $20/hr to up to $80/hr.
 
-#### Essential Websites & Apps: [italki](https://www.italki.com/?hl=en), [Verbling](https://www.verbling.com/), [Tandem](https://www.tandem.net/), [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/)
+### Essential Websites & Apps: [italki](https://www.italki.com/?hl=en), [Verbling](https://www.verbling.com/), [Tandem](https://www.tandem.net/), [Fiverr](https://www.fiverr.com/), [Freelancer.com](https://www.freelancer.com/), [Upwork](https://www.upwork.com/)
 
 ## Wait for More Ways to Make Money Online Selling Things
 

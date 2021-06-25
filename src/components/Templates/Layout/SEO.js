@@ -131,6 +131,7 @@ const SEO = ({
 
 SEO.defaultProps = {
   meta: [],
+  link: [],
   description: ``,
   title: `The Muhymin Blog`,
 };
