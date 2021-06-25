@@ -65,7 +65,6 @@ module.exports = {
               withWebp: true,
               withAvif: true,
               showCaptions: true,
-              tracedSVG: true,
             },
           },
           `gatsby-remark-smartypants`,
@@ -75,8 +74,13 @@ module.exports = {
               directory: `${__dirname}/src/data/snippets`,
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+            },
+          },
           `gatsby-remark-prismjs`,
-          `gatsby-remark-autolink-headers`,
         ],
       },
     },

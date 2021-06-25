@@ -24,7 +24,6 @@ export default function PostTemplate({ data, pageContext }) {
   const { title, date: publishedTime, mDate } = fm;
 
   const modifiedTime = mDate ? mDate : publishedTime;
-  console.log(tableOfContents);
 
   const author = fm.author?.id || sm.author.name;
   const authorFb = fm.author?.fb || sm.social.fb;
@@ -102,7 +101,7 @@ export default function PostTemplate({ data, pageContext }) {
               {readingTime} min read • By {author} • Last Updated On{" "}
               {new Date(publishedTime).toDateString()}
             </p>
-            <MDXRenderer>{markdown}</MDXRenderer>
+            <MDXRenderer items={tableOfContents.items}>{markdown}</MDXRenderer>
             <LazyLoad>
               <ShareButtons
                 fallback={<Fallback />}

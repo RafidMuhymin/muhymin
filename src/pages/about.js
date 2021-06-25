@@ -5,9 +5,10 @@ import "../styles/about.scss";
 import { BgImage } from "gbimage-bridge";
 import { graphql } from "gatsby";
 
-export default function About({ data }) {
+export default function About({ data, children }) {
   const frontBanner = data.file.childImageSharp.gatsbyImageData;
   const frontBannerAvif = frontBanner.images.sources[0].srcSet.slice(0, 75);
+  console.log(children);
   return (
     <Layout
       link={[{ rel: "preload", as: "image", href: `${frontBannerAvif}` }]}
