@@ -78,6 +78,7 @@ module.exports = {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               icon: false,
+              enableCustomId: "toch",
             },
           },
           `gatsby-remark-prismjs`,

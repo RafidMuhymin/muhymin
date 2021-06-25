@@ -36,3 +36,20 @@
     display: none;
   }
 }
+
+#toc {
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 5vh;
+  border-radius: 1em;
+  margin: 1.5em 0;
+  li {
+    a {
+      color: white;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

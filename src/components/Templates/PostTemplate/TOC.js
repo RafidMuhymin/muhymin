@@ -9,6 +9,6 @@ export default function TOC({ items }) {
           {items && <TOC items={items} />}
         </li>
       ))}
-    </>
+    </ul>
   );
 }
