@@ -22,8 +22,7 @@ export default function ContactForm() {
       method: "POST",
       body: JSON.stringify(data),
     })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
         setProcessing(false);
       })
       .catch((err) => {
@@ -33,44 +32,44 @@ export default function ContactForm() {
   return (
     <form id="contact-form" className="p-4" onSubmit={handleSubmit(onSubmit)}>
       <h2 className="text-center">Send Us a Message</h2>
-      
+      <br />
       <label>
-      Enter Your Email Address
-      <input
-        className="form-control my-3"
-        type="email"
-        {...register("email", { required: true })}
-      />
+        Enter Your Email Address
+        <input
+          className="form-control my-3"
+          type="email"
+          {...register("email", { required: true })}
+        />
       </label>
       {errors.name && <small>This field is required</small>}
-      
+
       <label>
-      <input
-        className="form-control my-3"
-        type="text"
-        placeholder="Enter Your Name"
-        {...register("name", { required: true })}
-      />
+        Enter Your Name
+        <input
+          className="form-control my-3"
+          type="text"
+          {...register("name", { required: true })}
+        />
       </label>
       {errors.email && <small>This field is required</small>}
-      
+
       <label>
-      Enter Your Website URL
-      <input
-        className="form-control my-3"
-        type="url"
-        {...register("website")}
-      />
+        Enter Your Website URL
+        <input
+          className="form-control my-3"
+          type="url"
+          {...register("website")}
+        />
       </label>
-      
+
       <label>
-      Type What You Want to Talk About
-      <textarea
-        className="form-control my-3"
-        cols="30"
-        rows="5"
-        {...register("info", { required: true })}
-      ></textarea>
+        Type What You Want to Talk About
+        <textarea
+          className="form-control my-3"
+          cols="30"
+          rows="5"
+          {...register("info", { required: true })}
+        ></textarea>
       </label>
       {errors.info && <small>This field is required</small>}
 

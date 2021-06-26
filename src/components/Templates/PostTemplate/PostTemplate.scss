@@ -6,17 +6,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  #blog-body {
-    main {
-      width: 70%;
-    }
-    aside {
-      width: 30%;
-    }
-  }
-}
-
 .prevNext {
   gap: 1em;
   div {
@@ -50,6 +39,17 @@
       &:hover {
         opacity: 0.8;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #blog-body {
+    main {
+      width: 70%;
+    }
+    aside {
+      width: 30%;
     }
   }
 }

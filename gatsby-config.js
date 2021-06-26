@@ -113,19 +113,6 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        mergeDefaultDirectives: true,
-        directives: {
-          "script-src":
-            "'self' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
-          "style-src": "'self' 'unsafe-inline'",
-          "img-src": "'self' data: https://platform-cdn.sharethis.com",
-        },
-      },
-    },
-
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://muhymin.gatsbyjs.io`,
@@ -138,25 +125,35 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-gatsby-cloud`,
 
-    // {
-    //   resolve: "gatsby-plugin-manifest",
-    //   options: {
-    //     name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
-    //     short_name: `Soft Hard System`,
-    //     description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
-    //     lang: "en",
-    //     start_url: `/`,
-    //     background_color: `#fff`,
-    //     theme_color: `#fff`,
-    //     display: `standalone`,
-    //     crossOrigin: `use-credentials`,
-    //     icon: "static/favicon.svg",
-    //     include_favicon: false,
-    //     cache_busting_mode: "name",
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        allPageHeaders: [
+          "Cache-Control: public, max-age=0, must-revalidate",
+          "Content-Security-Policy: base-uri 'self'; default-src 'self'; script-src 'self' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com 'sha256-ecIkKw1UaQjeT+fiAh0Q6OKT97qwaQ/RStEQaewwWyI=' 'sha256-KWO6UOhc/cfhZd4gtXYPu4WkSRPuCQDtCkF/v9OyJB8=' 'sha256-d1U3Nlory+rDKhRqRYnw+9l2UU7SXzTpwRIIyvWnr80='; style-src 'self' 'unsafe-inline' 'sha256-C8hTSF2IwRpX57+q1wBgC/84JUFFdDxC/fUGfu4C0VQ=' 'sha256-LEbWFSWxt+oVnC4xzh4AJ3cGaYv3SkbW0vbyUq1a5Vw='; object-src 'none'; form-action 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' data: https://platform-cdn.sharethis.com;",
+        ],
+        mergeCachingHeaders: true,
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: `Learn About Latest Technologies and Coding in One Place | Soft Hard System`,
+        short_name: `Soft Hard System`,
+        description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
+        lang: "en",
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        crossOrigin: `use-credentials`,
+        icon: "static/favicon.svg",
+        include_favicon: false,
+        cache_busting_mode: "name",
+      },
+    },
 
     {
       resolve: "gatsby-plugin-offline",

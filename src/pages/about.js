@@ -5,13 +5,17 @@ import "../styles/about.scss";
 import { BgImage } from "gbimage-bridge";
 import { graphql } from "gatsby";
 
-export default function About({ data, children }) {
-  const frontBanner = data.file.childImageSharp.gatsbyImageData;
-  const frontBannerAvif = frontBanner.images.sources[0].srcSet.slice(0, 75);
-  console.log(children);
+export default function About({ data }) {
+  const frontBanner = data.frontBanner.childImageSharp.gatsbyImageData;
+  const profilePicture = data.profilePicture.childImageSharp.gatsbyImageData;
+  const profilePictureAvif = profilePicture.images.sources[0].srcSet.slice(
+    0,
+    75
+  );
+
   return (
     <Layout
-      link={[{ rel: "preload", as: "image", href: `${frontBannerAvif}` }]}
+      link={[{ rel: "preload", as: "image", href: `${profilePictureAvif}` }]}
     >
       <BgImage image={frontBanner}>
         <div id="about-head">
@@ -20,14 +24,23 @@ export default function About({ data, children }) {
           <h2>About Me</h2>
         </div>
       </BgImage>
-      <Bio />
+      <Bio profilePic={profilePicture} />
     </Layout>
   );
 }
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "images/front-banner-background.jpg" }) {
+    frontBanner: file(
+      relativePath: { eq: "images/front-banner-background.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+    profilePicture: file(
+      relativePath: { eq: "images/profilePicture/rafid-muhymin.jpg" }
+    ) {
       childImageSharp {
         gatsbyImageData
       }

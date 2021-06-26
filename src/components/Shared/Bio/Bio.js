@@ -1,21 +1,8 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import { BgImage } from "gbimage-bridge";
 import "./Bio.scss";
 
-export default function Bio() {
-  const { file } = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "images/rafid-muhymin-profile-picture.jpg" }) {
-        childImageSharp {
-          gatsbyImageData
-        }
-      }
-    }
-  `);
-
-  const profilePic = file.childImageSharp.gatsbyImageData;
-
+export default function Bio({ profilePic }) {
   return (
     <div className="row front-bio">
       <BgImage
@@ -23,7 +10,7 @@ export default function Bio() {
         image={profilePic}
         className="col-md-6 p-5 position-relative profile-picture"
       />
-      
+
       <div className="col-md-6 p-5">
         <h3>Rafid Muhymin Wafi</h3>
         <br />

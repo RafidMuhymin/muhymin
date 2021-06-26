@@ -127,7 +127,8 @@ blockquote {
 }
 
 figure.gatsby-resp-image-figure {
-  .gatsby-resp-image-wrapper {
+  span,
+  img {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.75rem;
@@ -135,6 +136,20 @@ figure.gatsby-resp-image-figure {
   figcaption {
     text-align: center;
     font-style: italic;
+  }
+}
+
+#blog-body {
+  main {
+    .subscription-form {
+      color: white;
+      background-image: linear-gradient(135deg, crimson 0%, blueviolet 100%);
+      padding: 1.5em;
+      border-radius: 1em;
+    }
+    .subscribe-btn {
+      background-color: #00bb7d;
+    }
   }
 }
 

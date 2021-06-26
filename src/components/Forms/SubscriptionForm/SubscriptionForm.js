@@ -61,10 +61,10 @@ export default function SubscriptionForm({ isSidebar }) {
         console.log(err);
       });
   };
+
   return (
     <form
-      id="subscription-form"
-      className={classname}
+      className={`subscription-form ${classname}`}
       onSubmit={handleSubmit(onSubmit)}
     >
       {isSidebar ? (
@@ -74,9 +74,8 @@ export default function SubscriptionForm({ isSidebar }) {
         </>
       ) : (
         <>
-          <h1 className="text-center">Subscibe to Our Newsletter</h1>
-          <br />
-          <h2 className="text-center">
+          <h1 className="text-center mb-3">Subscibe to Our Newsletter</h1>
+          <h2 className="text-center mb-3">
             Get the Latest Updates Delivered right to Your Inbox
           </h2>
         </>
@@ -103,8 +102,7 @@ export default function SubscriptionForm({ isSidebar }) {
       {errors.name && <small>This field is required</small>}
 
       <SubmitButton
-        id="subscribe-btn"
-        className="form-control my-2 bg-danger text-white"
+        className="subscribe-btn form-control my-2 bg-danger text-white"
         boolean={processing}
         value="Subscribe"
       />

@@ -7,9 +7,18 @@ import { BgImage } from "gbimage-bridge";
 import "../styles/index.scss";
 
 export default function Index() {
-  const { file } = useStaticQuery(graphql`
+  const { frontBanner, profilePicture } = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "images/front-banner-background.jpg" }) {
+      frontBanner: file(
+        relativePath: { eq: "images/front-banner-background.jpg" }
+      ) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      profilePicture: file(
+        relativePath: { eq: "images/profilePicture/rafid-muhymin.jpg" }
+      ) {
         childImageSharp {
           gatsbyImageData
         }
@@ -17,18 +26,19 @@ export default function Index() {
     }
   `);
 
-  const frontBanner = file.childImageSharp.gatsbyImageData;
-  const frontBannerAvif = frontBanner.images.sources[0].srcSet.slice(0, 75);
+  const frontBannerData = frontBanner.childImageSharp.gatsbyImageData;
+  const profilePictureData = profilePicture.childImageSharp.gatsbyImageData;
+  const frontBannerAvif = frontBannerData.images.sources[0].srcSet.slice(0, 75);
   return (
     <Layout
       link={[{ rel: "preload", as: "image", href: `${frontBannerAvif}` }]}
     >
-      <BgImage image={frontBanner} className="row p-3">
+      <BgImage image={frontBannerData} className="row p-3">
         <div className="col-md-5">
           <SubscriptionForm />
         </div>
       </BgImage>
-      <Bio />
+      <Bio profilePic={profilePictureData} />
     </Layout>
   );
 }

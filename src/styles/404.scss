@@ -2,14 +2,17 @@
   img {
     margin-top: -2.5em;
   }
-  #subscription-form {
+  .subscription-form {
     color: white;
     background-image: linear-gradient(135deg, crimson 0%, blueviolet 100%);
     padding: 1.5em;
     border-radius: 1em;
   }
-  #subscribe-btn {
+  .subscribe-btn {
     background-color: #00bb7d;
+  }
+  label {
+    text-align: left;
   }
 }
 
