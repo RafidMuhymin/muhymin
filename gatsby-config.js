@@ -146,7 +146,7 @@ module.exports = {
           "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
         },
         allPageHeaders: [
-          "Content-Security-Policy: script-src 'self' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com; style-src 'self' 'unsafe-inline'; object-src 'none'; form-action 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' data: https://platform-cdn.sharethis.com; base-uri 'self'; default-src 'self';",
+          "Content-Security-Policy: script-src 'self' 'unsafe-inline' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com; style-src 'self' 'unsafe-inline'; object-src 'none'; form-action 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' data: https://platform-cdn.sharethis.com; base-uri 'self'; default-src 'self';",
         ],
         mergeCachingHeaders: true,
       },
