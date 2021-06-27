@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -145,9 +146,25 @@ module.exports = {
         headers: {
           "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
         },
-        allPageHeaders: [
-          "Content-Security-Policy: script-src 'self' 'unsafe-inline' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com; style-src 'self' 'unsafe-inline'; object-src 'none'; form-action 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' data: https://platform-cdn.sharethis.com; base-uri 'self'; default-src 'self';",
-        ],
+        transformHeaders: (headers, path) => {
+          if (path.endsWith("/")) {
+            const filePath = `./public${path}index.html`;
+            const rawHtml = fs.readFileSync(filePath).toString();
+            const csp =
+              /<meta http-equiv="Content-Security-Policy" content="(.*?)"\/>/
+                .exec(rawHtml)[1]
+                .replace(/&#x27;/g, `'`);
+            headers.push(`Content-Security-Policy: ${csp}`);
+            fs.writeFileSync(
+              filePath,
+              rawHtml.replace(
+                /<meta http-equiv="Content-Security-Policy" content=".*?"\/>/g,
+                ""
+              )
+            );
+          }
+          return headers;
+        },
         mergeCachingHeaders: true,
       },
     },
