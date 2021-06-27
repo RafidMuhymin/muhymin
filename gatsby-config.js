@@ -119,9 +119,9 @@ module.exports = {
         mergeDefaultDirectives: true,
         directives: {
           "script-src":
-            "'self' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
+            "'self' platform-api.sharethis.com l.sharethis.com count-server.sharethis.com",
           "style-src": "'self' 'unsafe-inline'",
-          "img-src": "'self' data: https://platform-cdn.sharethis.com",
+          "img-src": "'self' data: platform-cdn.sharethis.com",
         },
       },
     },
@@ -242,7 +242,6 @@ module.exports = {
                 title
                 description
                 siteUrl
-                site_url: siteUrl
               }
             }
           }

@@ -37,7 +37,7 @@ export default function Layout({
         title={title}
         twitterId={twitterId}
         type={type}
-      ></SEO>
+      />
       <input
         type="checkbox"
         id="collapse"
