@@ -119,11 +119,11 @@ module.exports = {
         mergeDefaultDirectives: true,
         mergeStyleHashes: false,
         directives: {
-          "img-src": "'self' data: platform-cdn.sharethis.com",
+          "img-src": "'self' data: https://platform-cdn.sharethis.com",
           "style-src": "'self' 'unsafe-inline'",
           "font-src": "'self' data:",
           "script-src":
-            "'self' 'unsafe-eval' platform-api.sharethis.com l.sharethis.com count-server.sharethis.com",
+            "'self' 'unsafe-eval' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
         },
       },
     },
