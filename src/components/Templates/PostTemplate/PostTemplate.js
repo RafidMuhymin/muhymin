@@ -49,6 +49,13 @@ export default function PostTemplate({ data, pageContext }) {
       imageWidth={imageWidth}
       imageHeight={imageHeight}
       imageType={imageType}
+      link={[
+        {
+          rel: "preload",
+          as: "image",
+          href: `${fImgData.images.sources[0].srcSet.slice(0, 75)}`,
+        },
+      ]}
       meta={[
         {
           property: `article:author`,
