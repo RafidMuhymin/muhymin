@@ -147,30 +147,22 @@ module.exports = {
           "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
         },
         transformHeaders: (headers, path) => {
-          console.log("in");
           if (path.endsWith("/")) {
-            console.log(path);
             const filePath = `./public${path}index.html`;
-            console.log(filePath);
             const rawHtml = fs.readFileSync(filePath).toString();
-            console.log(rawHtml);
             const csp =
-              /<meta http-equiv="Content-Security-Policy" content="(.*?)"\/>/
+              /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/
                 .exec(rawHtml)[1]
                 .replace(/&#x27;/g, `'`);
-            console.log(csp);
             headers.push(`Content-Security-Policy: ${csp}`);
-            console.log(headers);
             fs.writeFileSync(
               filePath,
               rawHtml.replace(
-                /<meta http-equiv="Content-Security-Policy" content=".*?"\/>/g,
+                /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/g,
                 ""
               )
             );
-            console.log("replaced");
           }
-          console.log("will return");
           return headers;
         },
         mergeCachingHeaders: true,
