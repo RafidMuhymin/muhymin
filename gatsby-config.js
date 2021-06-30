@@ -19,7 +19,6 @@ module.exports = {
     author: {
       name: `Rafid Muhymin Wafi`,
       summary: `A 17 year old boy who is more a passionate web developer and content creator than a high school student.`,
-      profilePicture: `src/images/profilePicture/rafid-muhymin.jpg`,
     },
     description: `Soft Hard System is a blog by Rafid Muhymin Wafi where you'll find blogs and latest news about new technologies, tools, stacks, and coding.`,
     siteUrl: `https://muhymin.gatsbyjs.io`,
@@ -34,7 +33,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-svg-url-loader`,
 
     {
       resolve: `gatsby-plugin-sharp`,
@@ -114,21 +112,6 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        mergeDefaultDirectives: true,
-        mergeStyleHashes: false,
-        directives: {
-          "img-src": "'self' data: https://platform-cdn.sharethis.com",
-          "style-src": "'self' 'unsafe-inline'",
-          "font-src": "'self' data:",
-          "script-src":
-            "'self' 'unsafe-eval' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
-        },
-      },
-    },
-
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://muhymin.gatsbyjs.io`,
@@ -141,35 +124,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
-
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        headers: {
-          "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
-        },
-        transformHeaders: (headers, path) => {
-          if (path.endsWith("/")) {
-            const filePath = `./public${path}index.html`;
-            const rawHtml = fs.readFileSync(filePath).toString();
-            const csp =
-              /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/
-                .exec(rawHtml)[1]
-                .replace(/&#x27;/g, `'`);
-            headers.push(`Content-Security-Policy: ${csp}`);
-            fs.writeFileSync(
-              filePath,
-              rawHtml.replace(
-                /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/g,
-                ""
-              )
-            );
-          }
-          return headers;
-        },
-        mergeCachingHeaders: true,
-      },
-    },
 
     {
       resolve: "gatsby-plugin-manifest",
@@ -292,6 +246,51 @@ module.exports = {
         ],
       },
     },
+
+    `gatsby-plugin-gatsby-cloud`,
+    // {
+    //   resolve: `gatsby-plugin-csp`,
+    //   options: {
+    //     mergeDefaultDirectives: true,
+    //     mergeStyleHashes: false,
+    //     directives: {
+    //       "img-src": "'self' data: https://platform-cdn.sharethis.com",
+    //       "style-src": "'self' 'unsafe-inline'",
+    //       "font-src": "'self' data:",
+    //       "script-src":
+    //         "'self' 'unsafe-eval' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
+    //     },
+    //   },
+    // },
+
+    // {
+    //   resolve: `gatsby-plugin-gatsby-cloud`,
+    //   options: {
+    //     headers: {
+    //       "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
+    //     },
+    //     transformHeaders: (headers, path) => {
+    //       if (path.endsWith("/")) {
+    //         const filePath = `./public${path}index.html`;
+    //         const rawHtml = fs.readFileSync(filePath).toString();
+    //         const csp =
+    //           /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/
+    //             .exec(rawHtml)[1]
+    //             .replace(/&#x27;/g, `'`);
+    //         headers.push(`Content-Security-Policy: ${csp}`);
+    //         fs.writeFileSync(
+    //           filePath,
+    //           rawHtml.replace(
+    //             /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/g,
+    //             ""
+    //           )
+    //         );
+    //       }
+    //       return headers;
+    //     },
+    //     mergeCachingHeaders: true,
+    //   },
+    // },
   ],
   mapping: {
     "Mdx.frontmatter.author": `AuthorsJson`,

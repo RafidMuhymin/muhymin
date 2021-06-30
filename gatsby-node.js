@@ -65,8 +65,6 @@ exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
     type MdxFrontmatter implements Node {
       description: String
-      facebook: String
-      twitter: String
     }
   `;
 
@@ -81,7 +79,27 @@ exports.onCreateWebpackConfig = ({
   plugins,
   actions,
 }) => {
-  actions.setWebpackConfig({
-    plugins: [new LoadablePlugin()],
+  const config = getConfig();
+
+  config.module.rules.find(
+    (rule) =>
+      rule.test &&
+      rule.test.toString() ===
+        "/\\.(ico|svg|jpg|jpeg|png|gif|webp|avif)(\\?.*)?$/"
+  ).test = /\.(ico|jpg|jpeg|png|gif|webp|avif)(\?.*)?$/;
+
+  config.module.rules.push({
+    test: /\.svg/,
+    use: {
+      loader: "svg-url-loader",
+      options: {
+        limit: 4096,
+        iesafe: true,
+      },
+    },
   });
+
+  config.plugins.push(new LoadablePlugin());
+
+  actions.replaceWebpackConfig(config);
 };
