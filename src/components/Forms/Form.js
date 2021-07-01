@@ -5,12 +5,12 @@ export default function Form({ children, setErrors, callback, ...rest }) {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target));
     const errs = {};
-    for (const key of data.keys()) {
+    for (const key of Object.keys(data)) {
       if (data[key].required && data[key] === "") {
         errs[key] = "This field is required";
       }
     }
-    if (errs.keys().length > 0) {
+    if (Object.keys(errs).length > 0) {
       setErrors(errs);
     } else {
       callback(data);
