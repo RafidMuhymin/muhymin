@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Form({ children, setErrors, callback, ...rest }) {
   const submit = (e) => {
+    e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target));
     const errs = {};
     for (const key of data.keys()) {
