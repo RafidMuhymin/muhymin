@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import getFormState from "../getFormState";
+import Form from "../Form";
 import SubmitButton from "../SubmitButton";
 import "./ContactForm.scss";
 
@@ -7,31 +7,31 @@ export default function ContactForm() {
   const [processing, setProcessing] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const onSubmit = (e) => {
-    const { data, errs } = getFormState(e.target);
-    if (errs.length > 0) {
-      setErrors(errors);
-    } else {
-      setProcessing(true);
-      const { name, info } = data;
-      window.open(
-        `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
-        "_blank"
-      );
-      fetch("/api/contact", {
-        method: "POST",
-        body: JSON.stringify(data),
+  const callback = (data) => {
+    setProcessing(true);
+    const { name, info } = data;
+    window.open(
+      `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
+      "_blank"
+    );
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        setProcessing(false);
       })
-        .then(() => {
-          setProcessing(false);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
+      .catch((err) => {
+        console.log(err);
+      });
   };
   return (
-    <form id="contact-form" className="p-4" onSubmit={onSubmit}>
+    <Form
+      id="contact-form"
+      className="p-4"
+      setErrors={setErrors}
+      callback={callback}
+    >
       <h2 className="text-center">Send Us a Message</h2>
       <br />
       <label>
@@ -78,6 +78,6 @@ export default function ContactForm() {
       <small className="d-block my-2 text-center">
         <em>* You'll be redirected to your Mail Client when you submit.</em>
       </small>
-    </form>
+    </Form>
   );
 }

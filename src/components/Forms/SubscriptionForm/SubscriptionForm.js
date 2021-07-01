@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import getFormState from "../getFormState";
+import Form from "../Form";
 import SubmitButton from "../SubmitButton";
 import "./SubscriptionForm.scss";
 
@@ -10,61 +10,60 @@ export default function SubscriptionForm({ isSidebar }) {
 
   const classname = isSidebar ? "mt-4 mb-2" : "";
 
-  const onSubmit = () => {
-    const { data, errs } = getFormState();
-    if (errs.length > 0) {
-      setErrors(errs);
-    } else {
-      setProcessing(true);
-      const splittedName = data.name.split(" ");
-      const lastname = splittedName.splice(splittedName.length - 1)[0];
-      const firstname = splittedName.join(" ");
+  const callback = (data) => {
+    setProcessing(true);
+    const splittedName = data.name.split(" ");
+    const lastname = splittedName.splice(splittedName.length - 1)[0];
+    const firstname = splittedName.join(" ");
 
-      const body = JSON.stringify({
-        createdAt: new Date().toISOString(),
-        firstName: firstname,
-        lastName: lastname,
-        identifiers: [
-          {
-            type: "email",
-            id: data.email,
-            sendWelcomeMessage: true,
-            channels: {
-              email: {
-                status: "subscribed",
-                statusDate: new Date().toISOString(),
-              },
+    const body = JSON.stringify({
+      createdAt: new Date().toISOString(),
+      firstName: firstname,
+      lastName: lastname,
+      identifiers: [
+        {
+          type: "email",
+          id: data.email,
+          sendWelcomeMessage: true,
+          channels: {
+            email: {
+              status: "subscribed",
+              statusDate: new Date().toISOString(),
             },
           },
-        ],
-      });
-
-      fetch("https://api.omnisend.com/v3/contacts", {
-        method: "POST",
-        headers: {
-          "x-api-key": process.env.GATSBY_X_API_KEY,
-          "content-type": "application/json",
         },
-        body,
-      })
-        .then(() => {
-          fetch("api/subscribe", {
-            method: "POST",
-            body,
-          })
-            .then(() => setProcessing(false))
-            .catch((err) => {
-              console.log(err);
-            });
+      ],
+    });
+
+    fetch("https://api.omnisend.com/v3/contacts", {
+      method: "POST",
+      headers: {
+        "x-api-key": process.env.GATSBY_X_API_KEY,
+        "content-type": "application/json",
+      },
+      body,
+    })
+      .then(() => {
+        fetch("api/subscribe", {
+          method: "POST",
+          body,
         })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
+          .then(() => setProcessing(false))
+          .catch((err) => {
+            console.log(err);
+          });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
-    <form className={`subscription-form ${classname}`} onSubmit={onSubmit}>
+    <Form
+      className={`subscription-form ${classname}`}
+      setErrors={setErrors}
+      callback={callback}
+    >
       {isSidebar ? (
         <>
           <h3 className="text-center">Subscibe to Our Newsletter</h3>
@@ -101,6 +100,6 @@ export default function SubscriptionForm({ isSidebar }) {
         boolean={processing}
         value="Subscribe"
       />
-    </form>
+    </Form>
   );
 }
