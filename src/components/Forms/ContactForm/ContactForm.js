@@ -1,36 +1,37 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import getFormState from "../getFormState";
 import SubmitButton from "../SubmitButton";
 import "./ContactForm.scss";
 
 export default function ContactForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
   const [processing, setProcessing] = useState(false);
+  const [errors, setErrors] = useState({});
 
-  const onSubmit = (data) => {
-    setProcessing(true);
-    const { name, info } = data;
-    window.open(
-      `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
-      "_blank"
-    );
-    fetch("/api/contact", {
-      method: "POST",
-      body: JSON.stringify(data),
-    })
-      .then(() => {
-        setProcessing(false);
+  const onSubmit = (e) => {
+    const { data, errs } = getFormState(e.target);
+    if (errs.length > 0) {
+      setErrors(errors);
+    } else {
+      setProcessing(true);
+      const { name, info } = data;
+      window.open(
+        `mailto:?to=rafidmuhymin@gmail.com&subject=I am ${name} contacting you via the contact form on your website&body=${info}`,
+        "_blank"
+      );
+      fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
       })
-      .catch((err) => {
-        console.log(err);
-      });
+        .then(() => {
+          setProcessing(false);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
   return (
-    <form id="contact-form" className="p-4" onSubmit={handleSubmit(onSubmit)}>
+    <form id="contact-form" className="p-4" onSubmit={onSubmit}>
       <h2 className="text-center">Send Us a Message</h2>
       <br />
       <label>
@@ -38,28 +39,21 @@ export default function ContactForm() {
         <input
           className="form-control my-3"
           type="email"
-          {...register("email", { required: true })}
+          name="email"
+          required
         />
       </label>
       {errors.name && <small>This field is required</small>}
 
       <label>
         Enter Your Name
-        <input
-          className="form-control my-3"
-          type="text"
-          {...register("name", { required: true })}
-        />
+        <input className="form-control my-3" type="text" name="name" required />
       </label>
       {errors.email && <small>This field is required</small>}
 
       <label>
         Enter Your Website URL
-        <input
-          className="form-control my-3"
-          type="url"
-          {...register("website")}
-        />
+        <input className="form-control my-3" type="url" name="website" />
       </label>
 
       <label>
@@ -68,7 +62,8 @@ export default function ContactForm() {
           className="form-control my-3"
           cols="30"
           rows="5"
-          {...register("info", { required: true })}
+          name="info"
+          required
         ></textarea>
       </label>
       {errors.info && <small>This field is required</small>}

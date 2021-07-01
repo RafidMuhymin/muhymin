@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link activeClassName="active-link" to="/contact">
           Contact
         </Link>
-        <Search></Search>
+        <Search />
       </div>
     </nav>
   );

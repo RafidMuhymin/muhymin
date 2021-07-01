@@ -26,7 +26,6 @@ export default function Search() {
         className="form-control d-inline"
         type="text"
         placeholder="Search …"
-        onSubmit={search}
         required
       />
       <input className="position-absolute end-0" type="submit" value="🔎" />
