@@ -5,7 +5,6 @@ import SubscriptionForm from "../components/Forms/SubscriptionForm/SubscriptionF
 import { Link } from "gatsby";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import error from "!svg-url-loader!../../static/error.svg";
-import "../styles/404.scss";
 
 export default function NotFound() {
   return (
