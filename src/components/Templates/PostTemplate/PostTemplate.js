@@ -13,7 +13,7 @@ const Comment = loadable(() => import("./Comment/Comment"));
 const ShareButtons = loadable(() => import("./Social/ShareButtons"));
 
 export default function PostTemplate({ data, pageContext }) {
-  const { slug, previous, next } = pageContext;
+  const { previous, next } = pageContext;
 
   const md = data.mdx;
   const fm = md.frontmatter;
@@ -112,9 +112,7 @@ export default function PostTemplate({ data, pageContext }) {
             <LazyLoad>
               <ShareButtons
                 fallback={<Fallback />}
-                url={sm.siteUrl + "/" + slug}
                 title={title}
-                media={ogImage}
                 user_id={authorTwitter}
                 text={desc}
               />

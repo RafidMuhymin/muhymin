@@ -8,12 +8,12 @@ import logo from "!svg-url-loader!../../../../../static/logo.svg";
 export default function Navbar() {
   useEffect(() => {
     document.querySelector("#layout").style.overflowY = "visible";
-    document.body.style.overflowY = "scroll";
+    document.body.style.overflowY = "auto";
     window.addEventListener("resize", () => {
       if (window.innerWidth > 767) {
         document.querySelector("#collapse").checked = false;
         document.querySelector("#layout").style.overflowY = "visible";
-        document.body.style.overflowY = "scroll";
+        document.body.style.overflowY = "auto";
       }
     });
   }, []);

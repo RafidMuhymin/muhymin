@@ -12,7 +12,7 @@ export default function Search() {
     if (pathname === `/search`) {
       document.querySelector("#collapse").checked = false;
       document.querySelector("#layout").style.overflowY = "visible";
-      document.body.style.overflowY = "scroll";
+      document.body.style.overflowY = "auto";
     }
     navigate(`/search?${query}`);
   };

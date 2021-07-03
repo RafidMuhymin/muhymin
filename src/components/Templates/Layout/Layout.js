@@ -48,7 +48,7 @@ export default function Layout({
             document.body.style.overflowY = "hidden";
           } else {
             document.querySelector("#layout").style.overflowY = "visible";
-            document.body.style.overflowY = "scroll";
+            document.body.style.overflowY = "auto";
           }
         }}
       />
