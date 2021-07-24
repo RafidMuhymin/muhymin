@@ -287,6 +287,7 @@ module.exports = {
           }
           return headers;
         },
+
         mergeCachingHeaders: true,
         mergeSecurityHeaders: true,
       },
