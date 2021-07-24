@@ -247,49 +247,50 @@ module.exports = {
       },
     },
 
-{
-  resolve: `gatsby-plugin-csp`,
-  options: {
-    mergeDefaultDirectives: true,
-    mergeStyleHashes: false,
-    directives: {
-      "img-src": "'self' data: https://platform-cdn.sharethis.com",
-      "style-src": "'self' 'unsafe-inline'",
-      "font-src": "'self' data:",
-      "script-src":
-        "'self' 'unsafe-eval' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        mergeDefaultDirectives: true,
+        mergeStyleHashes: false,
+        directives: {
+          "img-src": "'self' data: https://platform-cdn.sharethis.com",
+          "style-src": "'self' 'unsafe-inline'",
+          "font-src": "'self' data:",
+          "script-src":
+            "'self' 'unsafe-eval' https://platform-api.sharethis.com https://l.sharethis.com https://count-server.sharethis.com",
+        },
+      },
     },
-  },
-},
 
-{
-  resolve: `gatsby-plugin-gatsby-cloud`,
-  options: {
-    headers: {
-      "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        headers: {
+          "/*": ["Cache-Control: public, max-age=0, must-revalidate"],
+        },
+        transformHeaders: (headers, path) => {
+          if (path.endsWith("/")) {
+            const filePath = `./public${path}index.html`;
+            const rawHtml = fs.readFileSync(filePath).toString();
+            const csp =
+              /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/
+                .exec(rawHtml)[1]
+                .replace(/&#x27;/g, `'`);
+            headers.push(`Content-Security-Policy: ${csp}`);
+            fs.writeFileSync(
+              filePath,
+              rawHtml.replace(
+                /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/g,
+                ""
+              )
+            );
+          }
+          return headers;
+        },
+        mergeCachingHeaders: true,
+        mergeSecurityHeaders: true,
+      },
     },
-    transformHeaders: (headers, path) => {
-      if (path.endsWith("/")) {
-        const filePath = `./public${path}index.html`;
-        const rawHtml = fs.readFileSync(filePath).toString();
-        const csp =
-          /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/
-            .exec(rawHtml)[1]
-            .replace(/&#x27;/g, `'`);
-        headers.push(`Content-Security-Policy: ${csp}`);
-        fs.writeFileSync(
-          filePath,
-          rawHtml.replace(
-            /<meta httpEquiv="Content-Security-Policy" content="(.*?)" \/>/g,
-            ""
-          )
-        );
-      }
-      return headers;
-    },
-    mergeCachingHeaders: true,
-  },
-},
   ],
   mapping: {
     "Mdx.frontmatter.author": `AuthorsJson`,
