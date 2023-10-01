@@ -56,7 +56,7 @@
     "gatsby-source-contentful": "^5.10.0",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-transformer-json": "^3.10.0",
-    "gatsby-transformer-remark": "^4.7.0",
+    "gatsby-transformer-remark": "^6.0.0",
     "gatsby-transformer-sharp": "^3.10.0",
     "gbimage-bridge": "^0.1.4",
     "html-inline-script-webpack-plugin": "^2.0.2",
