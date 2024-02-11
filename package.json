@@ -63,7 +63,7 @@
     "html-webpack-plugin": "^5.3.2",
     "lmdb-store": "^1.6.4",
     "lunr": ">=2.3.9",
-    "mongodb": "^4.0.1",
+    "mongodb": "^6.0.0",
     "mongodb-client-encryption": "^1.2.6",
     "postcss": "^8.3.6",
     "postcss-csso": "^5.0.1",
